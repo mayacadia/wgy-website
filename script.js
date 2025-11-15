@@ -96,6 +96,8 @@ window.addEventListener('scroll', () => {
 
 const sections = document.querySelectorAll('section[id]');
 
+// Disabled - single page only
+/*
 window.addEventListener('scroll', () => {
     const scrollY = window.pageYOffset;
     
@@ -114,6 +116,7 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+*/
 
 // ===========================
 // LOADING ANIMATION
@@ -132,13 +135,13 @@ const destinations = [
         id: 'barcelona',
         title: 'BARCELONA, SPAIN',
         description: 'A place where history, culture, and sunshine come together',
-        image: 'https://images.unsplash.com/photo-1562883676-8c7feb83f09b?w=800&q=80'
+        image: 'destinations/barcelona.jpg'
     },
     {
         id: 'cabo',
         title: 'CABO SAN LUCAS, MEXICO',
         description: 'Sun, sea, and luxury where desert landscapes meet the sparkling Pacific',
-        image: 'https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?w=800&q=80'
+        image: 'destinations/cabosanlucas.jpg'
     }
 ];
 
