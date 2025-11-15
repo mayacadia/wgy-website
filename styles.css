@@ -819,73 +819,155 @@ p {
    FOOTER
    =========================== */
 .footer {
-    background: var(--darker-navy);
+    background: #3a3a3a;
     color: var(--white);
-    padding: 4rem 0 2rem;
+    padding: 0;
 }
 
-.footer-content {
+.footer-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-    margin-bottom: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    padding: 4rem 6rem;
+    background: #3a3a3a;
 }
 
-.footer-logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2.5rem;
+.footer-left h3,
+.footer-right h3 {
+    font-family: 'TT Drugs', 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+    color: #ece0bb;
+}
+
+.footer-subtitle {
+    font-family: 'Glacial Indifference', 'Montserrat', sans-serif;
+    font-size: 0.85rem;
     font-weight: 300;
-    color: var(--gold);
-    letter-spacing: 4px;
-    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    color: #ece0bb;
+}
+
+.footer-contact {
+    margin-bottom: 2rem;
+}
+
+.footer-contact p {
+    font-family: 'Glacial Indifference', 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #ece0bb;
+    margin-bottom: 0.5rem;
+}
+
+.contact-icon {
+    margin-right: 0.5rem;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ece0bb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ece0bb;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: #ece0bb;
+    color: #3a3a3a;
+    border-color: #ece0bb;
+}
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .footer-logo-img {
-    height: 170px;
+    height: 300px;
     width: auto;
-    margin-bottom: -1rem;
 }
 
-.footer-section p {
-    color: rgba(255, 255, 255, 0.7);
-    line-height: 1.8;
-    font-size: 0.9rem;
-    font-weight: 300;
-}
-
-.footer-section h4 {
+.footer-journey-btn {
+    display: inline-block;
+    padding: 12px 35px;
+    border: 1px solid var(--gold);
+    background: transparent;
     color: var(--gold);
-    margin-bottom: 1.5rem;
-    font-size: 0.9rem;
+    font-family: 'TT Drugs', sans-serif;
+    font-size: 0.75rem;
     letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
 }
 
-.footer-section ul {
+.footer-journey-btn:hover {
+    background: var(--gold);
+    color: #3a3a3a;
+}
+
+.footer-right {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
 }
 
-.footer-section ul a {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
-    font-weight: 300;
+.footer-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-top: 1rem;
 }
 
-.footer-section ul a:hover {
-    color: var(--gold);
+.footer-gallery img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid var(--white);
 }
 
-.footer-bottom {
-    text-align: center;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+.footer-partners {
+    background: #ece0bb;
+    padding: 2rem 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer-bottom p {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 0.85rem;
+.partners-logos {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.partners-logos img {
+    height: 120px;
+    width: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    mix-blend-mode: multiply;
+}
+
+.partners-logos img:hover {
+    opacity: 1;
 }
 
 /* ===========================
