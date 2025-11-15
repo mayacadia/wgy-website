@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the world with WGY Travel - Your perfect vacation starts here!">
+    <title>WGY Travel - Discover the World</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @font-face {
+            font-family: 'TT Drugs';
+            src: url('fonts/TTDrugs-Regular.woff2') format('woff2'),
+                 url('fonts/TTDrugs-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Glacial Indifference';
+            src: url('fonts/GlacialIndifference-Regular.woff2') format('woff2'),
+                 url('fonts/GlacialIndifference-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="wgylogo.png" alt="WGY Travel" class="logo-img">
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">HOME</a></li>
+                <li><a href="#about" class="nav-link">ABOUT US</a></li>
+                <li class="dropdown">
+                    <a href="#services" class="nav-link">OUR SERVICES <span class="arrow">▼</span></a>
+                </li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">DISCOVER THE WORLD WITH WGY TRAVEL</h1>
+            <p class="hero-subtitle">YOUR PERFECT VACATION STARTS HERE!</p>
+        </div>
+    </section>
+
+    <!-- Preferred Partners Section -->
+    <section class="partners-section">
+        <div class="container">
+            <h2 class="section-title">PREFERRED PARTNERS</h2>
+        </div>
+        <div class="partners-carousel">
+            <div class="partners-track">
+                <div class="partner-logo"><img src="partners/partner1.png" alt="Partner 1"></div>
+                <div class="partner-logo"><img src="partners/partner2.png" alt="Partner 2"></div>
+                <div class="partner-logo"><img src="partners/partner3.png" alt="Partner 3"></div>
+                <div class="partner-logo"><img src="partners/partner4.png" alt="Partner 4"></div>
+                <div class="partner-logo"><img src="partners/partner5.png" alt="Partner 5"></div>
+                <div class="partner-logo"><img src="partners/partner6.png" alt="Partner 6"></div>
+                <div class="partner-logo"><img src="partners/partner7.png" alt="Partner 7"></div>
+                <!-- Duplicated for seamless loop -->
+                <div class="partner-logo"><img src="partners/partner1.png" alt="Partner 1"></div>
+                <div class="partner-logo"><img src="partners/partner2.png" alt="Partner 2"></div>
+                <div class="partner-logo"><img src="partners/partner3.png" alt="Partner 3"></div>
+                <div class="partner-logo"><img src="partners/partner4.png" alt="Partner 4"></div>
+                <div class="partner-logo"><img src="partners/partner5.png" alt="Partner 5"></div>
+                <div class="partner-logo"><img src="partners/partner6.png" alt="Partner 6"></div>
+                <div class="partner-logo"><img src="partners/partner7.png" alt="Partner 7"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section id="about" class="welcome-section">
+        <div class="container">
+            <div class="welcome-content">
+                <div class="welcome-text">
+                    <h2 class="welcome-title">WELCOME TO WGY TRAVEL</h2>
+                    <p>We are a Virtuoso registered travel agency with a passion for excellence. Our team of dedicated professionals brings together a wealth of expertise in the art and science of travel.</p>
+                    <p>Our goal is to make your journey as seamless and enjoyable as possible. We take care of every detail, from booking flights and hotels to arranging tours and experiences. We understand that meaningful journeys are about more than just destinations—they're about creating memories that last a lifetime. Whether you're planning a romantic getaway, a family vacation, or a solo adventure, we're here to help you discover the extraordinary.</p>
+                    <a href="#" class="read-more-btn">READ MORE</a>
+                </div>
+                <div class="welcome-logo">
+                    <img src="wgylogo.png" alt="WGY" class="welcome-logo-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">SERVICES</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1614963366795-e575e0b24b14?w=400&q=80" alt="Passport & Visas">
+                    <div class="service-overlay">
+                        <h3>PASSPORT & VISAS<br>CONSULTANCY SERVICES</h3>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&q=80" alt="Luxury Vehicle Hire">
+                    <div class="service-overlay">
+                        <h3>LUXURY VEHICLE HIRE</h3>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=400&q=80" alt="Yacht Charter">
+                    <div class="service-overlay">
+                        <h3>YACHT CHARTER</h3>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&q=80" alt="Spa">
+                    <div class="service-overlay">
+                        <h3>SPA</h3>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=400&q=80" alt="Massage">
+                    <div class="service-overlay">
+                        <h3>MASSAGE</h3>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=400&q=80" alt="Business Travel">
+                    <div class="service-overlay">
+                        <h3>BUSINESS TRAVEL</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations Section -->
+    <section class="destinations-section">
+        <div class="container">
+            <h2 class="section-title">POPULAR DESTINATIONS</h2>
+        </div>
+        
+        <!-- Destinations Carousel -->
+        <div class="destinations-carousel">
+            <button class="carousel-arrow left" id="prevDestination">‹</button>
+            <button class="carousel-arrow right" id="nextDestination">›</button>
+            
+            <div class="destination-slide active" data-destination="barcelona">
+                <div class="destination-overlay"></div>
+                <div class="destination-content">
+                    <h2>BARCELONA, SPAIN</h2>
+                    <p>A place where history, culture, and sunshine come together</p>
+                    <button class="view-more-btn" data-destination="barcelona">VIEW MORE</button>
+                </div>
+            </div>
+            
+            <div class="destination-slide" data-destination="cabo">
+                <div class="destination-overlay"></div>
+                <div class="destination-content">
+                    <h2>CABO SAN LUCAS, MEXICO</h2>
+                    <p>Sun, sea, and luxury where desert landscapes meet the sparkling Pacific</p>
+                    <button class="view-more-btn" data-destination="cabo">VIEW MORE</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Destination Modal -->
+        <div class="destination-modal" id="destinationModal">
+            <div class="modal-overlay" id="modalOverlay"></div>
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose">×</button>
+                <button class="modal-arrow left" id="modalPrev">‹</button>
+                <button class="modal-arrow right" id="modalNext">›</button>
+                
+                <div class="modal-body">
+                    <h2 class="modal-title" id="modalTitle">BARCELONA, SPAIN</h2>
+                    <div class="modal-image-container">
+                        <img id="modalImage" src="https://images.unsplash.com/photo-1562883676-8c7feb83f09b?w=800&q=80" alt="Destination">
+                    </div>
+                    <p class="modal-description" id="modalDescription">A place where history, culture, and sunshine come together</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">OUR CLIENTS SAY</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>I was going to WGY Travel for over 5 years. I can honestly say this is one of the best travel agencies I have seen. The owner and the staff are very professional and helpful</p>
+                    <h4>~ LINDA LAMB</h4>
+                </div>
+                <div class="testimonial-card gold">
+                    <div class="stars">★★★★★</div>
+                    <p>I am referring to WGY Travel 100%! I have been using WGY Travel for over 15 years. They have taken care of my travel needs and help me through every step. I am continuously using their services and will continue to do so.</p>
+                    <h4>~ KAREN LEE</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>WGY Travel offers personalized service with a trusted, professional yet warm and friendly staff. I highly recommend!</p>
+                    <h4>~ LYNDA LEE</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Airline Partners Section -->
+    <section class="airline-partners-section">
+        <div class="container">
+            <h2 class="section-title">AIRLINE PARTNERS</h2>
+        </div>
+        <div class="airline-carousel">
+            <div class="airline-track">
+                <div class="airline-logo"><img src="https://via.placeholder.com/120x60/ffffff/003366?text=UNITED" alt="United Airlines"></div>
+                <div class="airline-logo"><img src="https://via.placeholder.com/120x60/ffffff/cc0000?text=JAL" alt="JAL"></div>
+                <div class="airline-logo"><img src="https://via.placeholder.com/120x60/ffffff/ff9900?text=Singapore" alt="Singapore Airlines"></div>
+                <div class="airline-logo"><img src="https://via.placeholder.com/120x60/ffffff/cc0000?text=DELTA" alt="Delta"></div>
+                <div class="airline-logo"><img src="https://via.placeholder.com/120x60/ffffff/003366?text=American" alt="American Airlines"></div>
+                <!-- Duplicated for seamless loop -->
+                <div class="airline-logo"><img src="https://via.placeholder.com/120x60/ffffff/003366?text=UNITED" alt="United Airlines"></div>
+                <div class="airline-logo"><img src="https://via.placeholder.com/120x60/ffffff/cc0000?text=JAL" alt="JAL"></div>
+                <div class="airline-logo"><img src="https://via.placeholder.com/120x60/ffffff/ff9900?text=Singapore" alt="Singapore Airlines"></div>
+                <div class="airline-logo"><img src="https://via.placeholder.com/120x60/ffffff/cc0000?text=DELTA" alt="Delta"></div>
+                <div class="airline-logo"><img src="https://via.placeholder.com/120x60/ffffff/003366?text=American" alt="American Airlines"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="wgylogo.png" alt="WGY Travel" class="footer-logo-img">
+                    <p>Your trusted partner in creating unforgettable travel experiences.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>CONTACT</h4>
+                    <p>Email: info@wgytravel.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WGY Travel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
