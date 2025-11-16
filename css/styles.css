@@ -8,7 +8,7 @@
 }
 
 :root {
-    --gold: #c9a961;
+    --gold: #ece0bb;
     --dark-navy: #1a1f2e;
     --darker-navy: #0d1117;
     --light-gray: #f5f5f5;
@@ -1252,6 +1252,8 @@ p {
 .service-detail-image {
     flex: 0 0 auto;
 }
+
+.service-detail-content h2 {
     font-family: 'TT Drugs', 'Cormorant Garamond', serif;
     font-size: 2.5rem;
     font-weight: 400;
@@ -1358,13 +1360,21 @@ p {
     }
 
     .service-detail-container {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         padding: 0 30px;
         gap: 3rem;
     }
 
+    .service-detail-reverse .service-detail-container {
+        flex-direction: column;
+    }
+
+    .service-detail-image {
+        display: none;
+    }
+
     .luxury-final {
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
 
     .service-detail-content h2,
@@ -1400,5 +1410,188 @@ p {
 
     .partners-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* About Page Styles */
+.about-content-section {
+    padding: 8rem 2rem;
+}
+
+.about-content-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    position: relative;
+}
+
+.about-content-text {
+    flex: 1;
+    z-index: 2;
+}
+
+.about-content-text h2 {
+    font-family: 'TT Drugs', 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    color: var(--gold);
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+
+.about-content-text p {
+    font-family: 'Glacial Indifference', 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.about-content-image {
+    flex: 0 0 600px;
+    opacity: 1;
+}
+
+.about-content-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* About Detail Sections */
+.about-detail-section {
+    padding: 8rem 2rem;
+}
+
+.about-detail-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.about-detail-reverse .about-detail-container {
+    flex-direction: row-reverse;
+}
+
+.about-detail-image {
+    flex: 0 0 auto;
+    width: 400px;
+}
+
+.about-detail-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+.about-detail-text {
+    flex: 1;
+}
+
+.about-detail-text h2 {
+    font-family: 'TT Drugs', 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    color: var(--gold);
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+
+.about-detail-text p {
+    font-family: 'Glacial Indifference', 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+/* CEO Expandable Text */
+.ceo-expanded-text {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease, margin-top 0.5s ease;
+}
+
+.ceo-expanded-text.show {
+    max-height: 1000px;
+    opacity: 1;
+    margin-top: 1.5rem;
+}
+
+.read-more-btn {
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    background-color: var(--gold);
+    color: var(--dark-navy);
+    font-family: 'TT Drugs', 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #b39450;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(201, 169, 97, 0.4);
+}
+
+/* Responsive styles for About page */
+@media (max-width: 768px) {
+    .about-content-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .about-content-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .about-content-image {
+        flex: 0 0 auto;
+        width: 200px;
+    }
+
+    .about-content-text h2 {
+        font-size: 2rem;
+    }
+
+    .about-detail-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .about-detail-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .about-detail-reverse .about-detail-container {
+        flex-direction: column;
+    }
+
+    .about-detail-image {
+        display: none;
+    }
+
+    .about-detail-text h2 {
+        font-size: 2rem;
+    }
+
+    .about-detail-text p {
+        font-size: 1rem;
+    }
+
+    .read-more-btn {
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
     }
 }
