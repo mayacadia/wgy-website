@@ -135,13 +135,13 @@ const destinations = [
         id: 'barcelona',
         title: 'BARCELONA, SPAIN',
         description: 'A place where history, culture, and sunshine come together',
-        image: 'destinations/barcelona.jpg'
+        image: 'images/destinations/barcelona.jpg'
     },
     {
         id: 'cabo',
         title: 'CABO SAN LUCAS, MEXICO',
         description: 'Sun, sea, and luxury where desert landscapes meet the sparkling Pacific',
-        image: 'destinations/cabosanlucas.jpg'
+        image: 'images/destinations/cabosanlucas.jpg'
     }
 ];
 

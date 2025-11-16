@@ -6,7 +6,7 @@
     <meta name="description" content="Discover the world with WGY Travel - Your perfect vacation starts here!">
     <title>WGY Travel - Discover the World</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <style>
         @font-face {
             font-family: 'TT Drugs';
@@ -32,13 +32,29 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="#home" class="logo">
-                <img src="wgylogo.png" alt="WGY Travel" class="logo-img">
+                <img src="images/wgylogo.png" alt="WGY Travel" class="logo-img">
             </a>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link">HOME</a></li>
-                <li><a href="#" class="nav-link">ABOUT US</a></li>
                 <li class="dropdown">
-                    <a href="#" class="nav-link">OUR SERVICES <span class="arrow">▼</span></a>
+                    <a href="#" class="nav-link">ABOUT US <span class="arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">About WGY</a></li>
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Our Vision</a></li>
+                        <li><a href="#">Our CEO</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="services.html" class="nav-link">OUR SERVICES <span class="arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html#private-leisure">Private & Luxury Leisure Travel</a></li>
+                        <li><a href="services.html#vip-access">VIP & Exclusive Access</a></li>
+                        <li><a href="services.html#private-aviation">Private Aviation & Luxury Transport</a></li>
+                        <li><a href="services.html#culinary">Culinary & Fine Dining Experiences</a></li>
+                        <li><a href="services.html#wellness">Wellness & Transformational Retreats</a></li>
+                        <li><a href="services.html#concierge">Concierge & Lifestyle Management</a></li>
+                    </ul>
                 </li>
                 <li><a href="#" class="nav-link">CONTACT</a></li>
             </ul>
@@ -66,19 +82,19 @@
         </div>
         <div class="partners-carousel">
             <div class="partners-track">
-                <div class="partner-logo"><img src="preferred-partners/couture.png" alt="Couture"></div>
-                <div class="partner-logo"><img src="preferred-partners/fourseasns.png" alt="Four Seasons"></div>
-                <div class="partner-logo"><img src="preferred-partners/jumeirah.png" alt="Jumeirah"></div>
-                <div class="partner-logo"><img src="preferred-partners/pearlpartner.png" alt="Pearl Partner"></div>
-                <div class="partner-logo"><img src="preferred-partners/relais.png" alt="Relais & Chateaux"></div>
-                <div class="partner-logo"><img src="preferred-partners/shangrila.png" alt="Shangri-La"></div>
+                <div class="partner-logo"><img src="images/preferred-partners/couture.png" alt="Couture"></div>
+                <div class="partner-logo"><img src="images/preferred-partners/fourseasns.png" alt="Four Seasons"></div>
+                <div class="partner-logo"><img src="images/preferred-partners/jumeirah.png" alt="Jumeirah"></div>
+                <div class="partner-logo"><img src="images/preferred-partners/pearlpartner.png" alt="Pearl Partner"></div>
+                <div class="partner-logo"><img src="images/preferred-partners/relais.png" alt="Relais & Chateaux"></div>
+                <div class="partner-logo"><img src="images/preferred-partners/shangrila.png" alt="Shangri-La"></div>
                 <!-- Duplicated for seamless loop -->
-                <div class="partner-logo"><img src="preferred-partners/couture.png" alt="Couture"></div>
-                <div class="partner-logo"><img src="preferred-partners/fourseasns.png" alt="Four Seasons"></div>
-                <div class="partner-logo"><img src="preferred-partners/jumeirah.png" alt="Jumeirah"></div>
-                <div class="partner-logo"><img src="preferred-partners/pearlpartner.png" alt="Pearl Partner"></div>
-                <div class="partner-logo"><img src="preferred-partners/relais.png" alt="Relais & Chateaux"></div>
-                <div class="partner-logo"><img src="preferred-partners/shangrila.png" alt="Shangri-La"></div>
+                <div class="partner-logo"><img src="images/preferred-partners/couture.png" alt="Couture"></div>
+                <div class="partner-logo"><img src="images/preferred-partners/fourseasns.png" alt="Four Seasons"></div>
+                <div class="partner-logo"><img src="images/preferred-partners/jumeirah.png" alt="Jumeirah"></div>
+                <div class="partner-logo"><img src="images/preferred-partners/pearlpartner.png" alt="Pearl Partner"></div>
+                <div class="partner-logo"><img src="images/preferred-partners/relais.png" alt="Relais & Chateaux"></div>
+                <div class="partner-logo"><img src="images/preferred-partners/shangrila.png" alt="Shangri-La"></div>
             </div>
         </div>
     </section>
@@ -94,7 +110,7 @@
                     <a href="#" class="read-more-btn">READ MORE</a>
                 </div>
                 <div class="welcome-logo">
-                    <img src="wgylogo.png" alt="WGY" class="welcome-logo-img">
+                    <img src="images/wgylogo.png" alt="WGY" class="welcome-logo-img">
                 </div>
             </div>
         </div>
@@ -106,37 +122,37 @@
             <h2 class="section-title">SERVICES</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <img src="services/1.jpg" alt="Private & Luxury Leisure Travel">
+                    <img src="images/services/1.jpg" alt="Private & Luxury Leisure Travel">
                     <div class="service-overlay">
                         <h3>PRIVATE & LUXURY LEISURE TRAVEL</h3>
                     </div>
                 </div>
                 <div class="service-card">
-                    <img src="services/2.jpg" alt="VIP & Exclusive Access">
+                    <img src="images/services/2.jpg" alt="VIP & Exclusive Access">
                     <div class="service-overlay">
                         <h3>VIP & EXCLUSIVE ACCESS</h3>
                     </div>
                 </div>
                 <div class="service-card">
-                    <img src="services/3.jpg" alt="Private Aviation & Luxury Transport">
+                    <img src="images/services/3.jpg" alt="Private Aviation & Luxury Transport">
                     <div class="service-overlay">
                         <h3>PRIVATE AVIATION & LUXURY TRANSPORT</h3>
                     </div>
                 </div>
                 <div class="service-card">
-                    <img src="services/4.jpeg" alt="Culinary Fine Dining Experiences">
+                    <img src="images/services/4.jpeg" alt="Culinary Fine Dining Experiences">
                     <div class="service-overlay">
                         <h3>CULINARY FINE DINING EXPERIENCES</h3>
                     </div>
                 </div>
                 <div class="service-card">
-                    <img src="services/5.jpg" alt="Wellness & Transformational Retreats">
+                    <img src="images/services/5.jpg" alt="Wellness & Transformational Retreats">
                     <div class="service-overlay">
                         <h3>WELLNESS & TRANSFORMATIONAL RETREATS</h3>
                     </div>
                 </div>
                 <div class="service-card">
-                    <img src="services/6.jpg" alt="Concierge & Lifestyle Management">
+                    <img src="images/services/6.jpg" alt="Concierge & Lifestyle Management">
                     <div class="service-overlay">
                         <h3>CONCIERGE & LIFESTYLE MANAGEMENT</h3>
                     </div>
@@ -186,7 +202,7 @@
                 <div class="modal-body">
                     <h2 class="modal-title" id="modalTitle">BARCELONA, SPAIN</h2>
                     <div class="modal-image-container">
-                        <img id="modalImage" src="destinations/barcelona.jpg" alt="Destination">
+                        <img id="modalImage" src="images/destinations/barcelona.jpg" alt="Destination">
                     </div>
                     <p class="modal-description" id="modalDescription">A place where history, culture, and sunshine come together</p>
                 </div>
@@ -225,17 +241,17 @@
         </div>
         <div class="airline-carousel">
             <div class="airline-track">
-                <div class="airline-logo"><img src="airline-partners/united.png" alt="United Airlines"></div>
-                <div class="airline-logo"><img src="airline-partners/jal.png" alt="JAL"></div>
-                <div class="airline-logo"><img src="airline-partners/sal.png" alt="Singapore Airlines"></div>
-                <div class="airline-logo airline-logo-small"><img src="airline-partners/delta.png" alt="Delta"></div>
-                <div class="airline-logo"><img src="airline-partners/american.png" alt="American Airlines"></div>
+                <div class="airline-logo"><img src="images/airline-partners/united.png" alt="United Airlines"></div>
+                <div class="airline-logo"><img src="images/airline-partners/jal.png" alt="JAL"></div>
+                <div class="airline-logo"><img src="images/airline-partners/sal.png" alt="Singapore Airlines"></div>
+                <div class="airline-logo airline-logo-small"><img src="images/airline-partners/delta.png" alt="Delta"></div>
+                <div class="airline-logo"><img src="images/airline-partners/american.png" alt="American Airlines"></div>
                 <!-- Duplicated for seamless loop -->
-                <div class="airline-logo"><img src="airline-partners/united.png" alt="United Airlines"></div>
-                <div class="airline-logo"><img src="airline-partners/jal.png" alt="JAL"></div>
-                <div class="airline-logo"><img src="airline-partners/sal.png" alt="Singapore Airlines"></div>
-                <div class="airline-logo airline-logo-small"><img src="airline-partners/delta.png" alt="Delta"></div>
-                <div class="airline-logo"><img src="airline-partners/american.png" alt="American Airlines"></div>
+                <div class="airline-logo"><img src="images/airline-partners/united.png" alt="United Airlines"></div>
+                <div class="airline-logo"><img src="images/airline-partners/jal.png" alt="JAL"></div>
+                <div class="airline-logo"><img src="images/airline-partners/sal.png" alt="Singapore Airlines"></div>
+                <div class="airline-logo airline-logo-small"><img src="images/airline-partners/delta.png" alt="Delta"></div>
+                <div class="airline-logo"><img src="images/airline-partners/american.png" alt="American Airlines"></div>
             </div>
         </div>
     </section>
@@ -259,28 +275,28 @@
                 </div>
             </div>
             <div class="footer-center">
-                <img src="wgylogo.png" alt="WGY Travel" class="footer-logo-img">
+                <img src="images/wgylogo.png" alt="WGY Travel" class="footer-logo-img">
                 <a href="#" class="footer-journey-btn">START YOUR JOURNEY</a>
             </div>
             <div class="footer-right">
                 <h3>GALLERY</h3>
                 <div class="footer-gallery">
-                    <img src="services/1.jpg" alt="Gallery 1">
-                    <img src="services/2.jpg" alt="Gallery 2">
-                    <img src="services/3.jpg" alt="Gallery 3">
+                    <img src="images/services/1.jpg" alt="Gallery 1">
+                    <img src="images/services/2.jpg" alt="Gallery 2">
+                    <img src="images/services/3.jpg" alt="Gallery 3">
                 </div>
             </div>
         </div>
         <div class="footer-partners">
             <div class="partners-logos">
-                <img src="footer/select.png" alt="Select Registry">
-                <img src="footer/iatan.png" alt="IATAN">
-                <img src="footer/travel leaders.png" alt="Travel Leaders">
-                <img src="footer/luxury.png" alt="Luxury Leaders Alliance">
+                <img src="images/footer/select.png" alt="Select Registry">
+                <img src="images/footer/iatan.png" alt="IATAN">
+                <img src="images/footer/travel leaders.png" alt="Travel Leaders">
+                <img src="images/footer/luxury.png" alt="Luxury Leaders Alliance">
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

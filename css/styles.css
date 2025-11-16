@@ -111,6 +111,54 @@ p {
     color: var(--gold);
 }
 
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(13, 17, 23, 0.95);
+    backdrop-filter: blur(15px);
+    min-width: 250px;
+    padding: 1rem 0;
+    margin-top: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: #ece0bb;
+    font-family: 'Glacial Indifference', 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background: rgba(201, 169, 97, 0.1);
+    color: var(--gold);
+    padding-left: 2rem;
+}
+
 .dropdown .arrow {
     font-size: 0.6rem;
     margin-left: 5px;
@@ -209,12 +257,8 @@ p {
 .partners-track {
     display: flex;
     gap: 4rem;
-    animation: scroll 30s linear infinite;
+    animation: scroll 20s linear infinite;
     width: fit-content;
-}
-
-.partners-track:hover {
-    animation-play-state: paused;
 }
 
 @keyframes scroll {
@@ -239,12 +283,13 @@ p {
     align-items: center;
     justify-content: center;
     opacity: 0.7;
-    transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
     flex-shrink: 0;
 }
 
 .partner-logo:hover {
     opacity: 1;
+    transform: scale(1.15);
 }
 
 .partner-logo img {
@@ -266,13 +311,16 @@ p {
     padding: 100px 0;
     background: var(--dark-navy);
     color: var(--white);
+    position: relative;
+    overflow: hidden;
 }
 
 .welcome-content {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr;
     gap: 5rem;
     align-items: center;
+    position: relative;
 }
 
 .welcome-title {
@@ -309,17 +357,26 @@ p {
 }
 
 .welcome-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: visible;
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 0;
 }
 
 .welcome-logo-img {
-    width: 1000px;
+    width: 850px;
+    max-width: none;
     height: auto;
     opacity: 0.15;
     filter: brightness(0) saturate(100%) invert(76%) sepia(18%) saturate(916%) hue-rotate(359deg) brightness(91%) contrast(86%);
+}
+
+.welcome-text {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
 }
 
 .large-logo {
@@ -393,16 +450,18 @@ p {
 
 .service-overlay h3 {
     font-family: 'TT Drugs', 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-weight: 400;
     color: var(--gold);
-    letter-spacing: 2px;
-    line-height: 1.6;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
     text-align: center;
-    padding: 20px 25px;
+    padding: 12px 15px;
     border: 1px solid var(--gold);
     background: transparent;
     text-transform: uppercase;
+    white-space: normal;
+    max-width: 90%;
 }
 
 /* ===========================
@@ -442,12 +501,12 @@ p {
 
 .destination-slide[data-destination="barcelona"] {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('destinations/barcelona.jpg') center/cover;
+                url('../images/destinations/barcelona.jpg') center/cover;
 }
 
 .destination-slide[data-destination="cabo"] {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('destinations/cabosanlucas.jpg') center/cover;
+                url('../images/destinations/cabosanlucas.jpg') center/cover;
 }
 
 .destination-overlay {
@@ -782,12 +841,8 @@ p {
 .airline-track {
     display: flex;
     gap: 4rem;
-    animation: scroll 25s linear infinite;
+    animation: scroll 18s linear infinite;
     width: fit-content;
-}
-
-.airline-track:hover {
-    animation-play-state: paused;
 }
 
 .airline-partners-grid {
@@ -803,6 +858,11 @@ p {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.airline-logo:hover {
+    transform: scale(1.15);
 }
 
 .airline-logo img {
@@ -1041,8 +1101,275 @@ p {
         grid-template-columns: 1fr;
     }
 
-    .footer-content {
+    .footer-container {
         grid-template-columns: 1fr;
+        padding: 3rem 2rem;
+        gap: 3rem;
+    }
+
+    .footer-left,
+    .footer-right {
+        text-align: center;
+    }
+
+    .footer-socials {
+        justify-content: center;
+    }
+
+    .footer-logo-img {
+        height: 150px;
+    }
+
+    .footer-partners {
+        padding: 2rem 1.5rem;
+    }
+
+    .partners-logos {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .partners-logos img {
+        height: 50px;
+    }
+}
+
+/* ===========================
+   PAGE HERO SECTION
+   =========================== */
+.page-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0 80px;
+    background-attachment: fixed;
+}
+
+.page-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 40px;
+    text-align: center;
+    color: var(--white);
+}
+
+.page-hero-title {
+    font-family: 'TT Drugs', 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+    color: var(--gold);
+}
+
+.page-hero-subtitle {
+    font-family: 'TT Drugs', 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+    color: #ece0bb;
+}
+
+.page-hero-text {
+    margin-top: 2rem;
+}
+
+.page-hero-text p {
+    font-family: 'Glacial Indifference', 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ===========================
+   TAILORED JOURNEYS SECTION
+   =========================== */
+.tailored-section {
+    padding: 100px 0;
+    background: var(--light-gray);
+}
+
+.tailored-title {
+    font-family: 'TT Drugs', 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-align: center;
+    color: var(--gold);
+    margin-bottom: 3rem;
+}
+
+.tailored-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tailored-content p {
+    font-family: 'Glacial Indifference', 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+/* ===========================
+   SERVICE DETAIL SECTIONS
+   =========================== */
+.service-detail {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    background-attachment: fixed;
+}
+
+.service-detail-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.service-detail-reverse .service-detail-container {
+    flex-direction: row-reverse;
+}
+
+.service-detail-content {
+    flex: 1;
+    color: var(--white);
+}
+
+.service-detail-image {
+    flex: 0 0 auto;
+}
+    font-family: 'TT Drugs', 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+    color: var(--gold);
+    line-height: 1.2;
+}
+
+.service-detail-content p {
+    font-family: 'Glacial Indifference', 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.service-detail-image {
+    flex: 0 0 auto;
+}
+
+.service-detail-content h2 {
+    font-family: 'TT Drugs', 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+    color: var(--gold);
+    line-height: 1.2;
+}
+
+.service-detail-image img {
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Luxury Without Limits Final Section */
+.luxury-final {
+    grid-template-columns: 1.2fr 1fr;
+}
+
+.service-detail-content-full {
+    color: var(--white);
+}
+
+.service-detail-content-full h2 {
+    font-family: 'TT Drugs', 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+    color: var(--gold);
+}
+
+.service-detail-content-full p {
+    font-family: 'Glacial Indifference', 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.journey-cta-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    border: 2px solid var(--gold);
+    background: transparent;
+    color: var(--gold);
+    font-family: 'TT Drugs', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.journey-cta-btn:hover {
+    background: var(--gold);
+    color: var(--dark-navy);
+}
+
+/* ===========================
+   RESPONSIVE DESIGN CONTINUED
+   =========================== */
+@media (max-width: 768px) {
+    .page-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .page-hero-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .page-hero-content {
+        padding: 0 20px;
+    }
+
+    .service-detail-container {
+        grid-template-columns: 1fr;
+        padding: 0 30px;
+        gap: 3rem;
+    }
+
+    .luxury-final {
+        grid-template-columns: 1fr;
+    }
+
+    .service-detail-content h2,
+    .service-detail-content-full h2 {
+        font-size: 2rem;
     }
 
     .container {
