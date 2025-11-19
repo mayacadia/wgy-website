@@ -19,6 +19,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -26,6 +27,8 @@ body {
     line-height: 1.6;
     color: var(--text-dark);
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
 }
 
 img {
@@ -45,7 +48,7 @@ ul {
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 20px;
 }
 
 p {
@@ -72,7 +75,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.3rem 40px;
+    padding: 0.3rem 20px;
 }
 
 .logo {
@@ -1005,10 +1008,11 @@ p {
 
 .footer-partners {
     background: #ece0bb;
-    padding: 2rem 6rem;
+    padding: 2rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .partners-logos {
@@ -1121,12 +1125,13 @@ p {
     }
 
     .footer-partners {
-        padding: 2rem 1.5rem;
+        padding: 2rem 1rem;
     }
 
     .partners-logos {
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 1.5rem;
+        max-width: 100%;
     }
 
     .partners-logos img {
@@ -1150,7 +1155,7 @@ p {
 .page-hero-content {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 20px;
     text-align: center;
     color: var(--white);
 }
@@ -1192,6 +1197,8 @@ p {
 .tailored-section {
     padding: 100px 0;
     background: var(--light-gray);
+    overflow: hidden;
+    width: 100%;
 }
 
 .tailored-title {
@@ -1208,6 +1215,7 @@ p {
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
+    padding: 0 20px;
 }
 
 .tailored-content p {
@@ -1229,12 +1237,14 @@ p {
     align-items: center;
     padding: 100px 0;
     background-attachment: fixed;
+    overflow: hidden;
+    width: 100%;
 }
 
 .service-detail-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 60px;
+    padding: 0 40px;
     display: flex;
     gap: 5rem;
     align-items: center;
@@ -1361,7 +1371,7 @@ p {
 
     .service-detail-container {
         flex-direction: column;
-        padding: 0 30px;
+        padding: 0 20px;
         gap: 3rem;
     }
 
@@ -1593,5 +1603,408 @@ p {
     .read-more-btn {
         padding: 0.8rem 2rem;
         font-size: 0.9rem;
+    }
+}
+
+/* ===========================
+   CONTACT PAGE STYLES
+   =========================== */
+.contact-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0;
+    background-attachment: fixed;
+    overflow: hidden;
+    width: 100%;
+}
+
+.contact-hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    color: var(--white);
+    z-index: 2;
+}
+
+.contact-hero-title {
+    font-family: 'TT Drugs', 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+    color: var(--white);
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.contact-hero-btn {
+    display: inline-block;
+    padding: 18px 50px;
+    border: 2px solid var(--gold);
+    background: transparent;
+    color: var(--gold);
+    font-family: 'TT Drugs', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.contact-hero-btn:hover {
+    background: var(--gold);
+    color: var(--dark-navy);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(236, 224, 187, 0.3);
+}
+
+/* Office Location Section */
+.office-location-section {
+    padding: 100px 0;
+    background: var(--light-gray);
+    overflow: hidden;
+    width: 100%;
+}
+
+.office-location-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.office-location-text {
+    text-align: left;
+}
+
+.office-location-text h2 {
+    font-family: 'TT Drugs', 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #c4a870;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+}
+
+.office-address {
+    font-family: 'TT Drugs', 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.office-city {
+    font-family: 'TT Drugs', 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-dark);
+    letter-spacing: 1px;
+}
+
+.office-location-map {
+    width: 100%;
+}
+
+.office-location-map iframe {
+    width: 100%;
+    height: 450px;
+    border: 3px solid var(--gold);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    padding: 100px 0;
+    background-attachment: fixed;
+    overflow: hidden;
+    width: 100%;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-form-title {
+    font-family: 'TT Drugs', 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-full {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label,
+.form-group-full label {
+    font-family: 'TT Drugs', 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.form-group input,
+.form-group-full input,
+.form-group-full textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.75rem 0;
+    font-family: 'Glacial Indifference', 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    color: var(--white);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group-full input::placeholder,
+.form-group-full textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-group input:focus,
+.form-group-full input:focus,
+.form-group-full textarea:focus {
+    border-bottom-color: var(--gold);
+}
+
+.form-group-full textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-submit-btn {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid var(--gold);
+    color: var(--gold);
+    font-family: 'TT Drugs', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.contact-submit-btn:hover {
+    background: var(--gold);
+    color: var(--dark-navy);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(236, 224, 187, 0.3);
+}
+
+/* Success Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('images/contact/contact2.jpg') center/cover;
+    margin: 10% auto;
+    padding: 3rem 2rem;
+    border: 2px solid var(--gold);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    animation: slideDown 0.4s ease;
+}
+
+.modal-icon {
+    margin: 0 auto 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-title {
+    font-family: 'TT Drugs', 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.modal-text {
+    font-family: 'Glacial Indifference', 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.modal-ok-btn {
+    padding: 12px 40px;
+    background: transparent;
+    border: 2px solid var(--gold);
+    color: var(--gold);
+    font-family: 'TT Drugs', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.modal-ok-btn:hover {
+    background: var(--gold);
+    color: var(--dark-navy);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Contact Page Responsive */
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contact-form-title {
+        font-size: 2rem;
+    }
+
+    .modal-content {
+        margin: 20% auto;
+        padding: 2rem 1.5rem;
+    }
+
+    .modal-title {
+        font-size: 1.5rem;
+    }
+
+    .office-location-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .office-location-text {
+        text-align: center;
+    }
+
+    .office-location-text h2 {
+        font-size: 2rem;
+    }
+
+    .office-address,
+    .office-city {
+        font-size: 1.2rem;
+    }
+
+    .office-location-map iframe {
+        height: 350px;
+    }
+
+    .contact-hero-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact-hero-btn {
+        padding: 15px 35px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form-title {
+        font-size: 1.5rem;
+    }
+
+    .modal-content {
+        margin: 30% auto;
+    }
+
+    .modal-title {
+        font-size: 1.2rem;
+    }
+
+    .modal-text {
+        font-size: 0.85rem;
+    }
+
+    .office-location-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .office-address,
+    .office-city {
+        font-size: 1rem;
+    }
+
+    .office-location-map iframe {
+        height: 300px;
+    }
+
+    .contact-hero-title {
+        font-size: 1.5rem;
+    }
+
+    .contact-hero-btn {
+        padding: 12px 30px;
+        font-size: 0.75rem;
     }
 }

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact WGY Travel - Let's plan your dream getaway">
+    <title>Contact Us - WGY Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        @font-face {
+            font-family: 'TT Drugs';
+            src: url('fonts/TTDrugs-Regular.woff2') format('woff2'),
+                 url('fonts/TTDrugs-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Glacial Indifference';
+            src: url('fonts/GlacialIndifference-Regular.woff2') format('woff2'),
+                 url('fonts/GlacialIndifference-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/wgylogo.png" alt="WGY Travel" class="logo-img">
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li class="dropdown">
+                    <a href="about.html" class="nav-link">ABOUT US <span class="arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html#about-wgy">About WGY</a></li>
+                        <li><a href="about.html#mission">Our Mission</a></li>
+                        <li><a href="about.html#vision">Our Vision</a></li>
+                        <li><a href="about.html#ceo">Our CEO</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="services.html" class="nav-link">OUR SERVICES <span class="arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html#private-leisure">Private & Luxury Leisure Travel</a></li>
+                        <li><a href="services.html#vip-access">VIP & Exclusive Access</a></li>
+                        <li><a href="services.html#private-aviation">Private Aviation & Luxury Transport</a></li>
+                        <li><a href="services.html#culinary">Culinary & Fine Dining Experiences</a></li>
+                        <li><a href="services.html#wellness">Wellness & Transformational Retreats</a></li>
+                        <li><a href="services.html#concierge">Concierge & Lifestyle Management</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero" style="background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('images/contact/contact1.png') center/cover;">
+        <div class="contact-hero-content">
+            <h1 class="contact-hero-title">LET'S PLAN YOUR DREAM GETAWAY - CONTACT US TODAY!</h1>
+            <a href="#contact-form" class="contact-hero-btn">BOOK A CONSULTATION</a>
+        </div>
+    </section>
+
+    <!-- Office Location Section -->
+    <section class="office-location-section">
+        <div class="office-location-container">
+            <div class="office-location-text">
+                <h2>COME BY OUR OFFICE</h2>
+                <p class="office-address">9851 NW 5B STREET UNIT 123</p>
+                <p class="office-city">DORAL FLORIDA, USA</p>
+            </div>
+            <div class="office-location-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.234567890123!2d-80.356528!3d25.826524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDQ5JzM1LjUiTiA4MMKwMjEnMjMuNSJX!5e0!3m2!1sen!2sus!4v1637000000000!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="450" 
+                    style="border:3px solid var(--gold); border-radius: 10px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get In Touch Form Section -->
+    <section class="contact-form-section" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/contact/contact2.jpg') center/cover fixed;">
+        <div class="contact-form-container">
+            <h2 class="contact-form-title">GET IN TOUCH</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">FIRST NAME*</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">LAST NAME*</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">EMAIL*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">TARGET DESTINATION*</label>
+                        <input type="text" id="destination" name="destination" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="travelDate">TRAVEL DATE*</label>
+                        <input type="date" id="travelDate" name="travelDate" required placeholder="dd/mm/yyyy">
+                    </div>
+                    <div class="form-group">
+                        <label for="travelTime">TRAVEL TIME*</label>
+                        <input type="time" id="travelTime" name="travelTime" required>
+                    </div>
+                </div>
+
+                <div class="form-group-full">
+                    <label for="phone">PHONE*</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="US +1">
+                </div>
+
+                <div class="form-group-full">
+                    <label for="specialRequest">SPECIAL REQUEST</label>
+                    <textarea id="specialRequest" name="specialRequest" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="contact-submit-btn">SUBMIT</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                    <circle cx="40" cy="40" r="38" stroke="#ece0bb" stroke-width="4"/>
+                    <path d="M25 40L35 50L55 30" stroke="#ece0bb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h2 class="modal-title">MESSAGE SENT SUCCESSFULLY!</h2>
+            <p class="modal-text">Check your email to see the status of your application.</p>
+            <button class="modal-ok-btn" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>GET IN TOUCH</h3>
+                <p class="footer-subtitle">WE'RE HERE TO HELP</p>
+                <div class="footer-contact">
+                    <p><span class="contact-icon">📍</span> 6881 NW 8B STREET UNIT 62 DORAL FLORIDA, USA</p>
+                    <p><span class="contact-icon">📧</span> 305 679 0408</p>
+                    <p>REQUEST@WGYLIFESTYLE.COM</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-center">
+                <img src="images/wgylogo.png" alt="WGY Travel" class="footer-logo-img">
+                <a href="contact.html" class="footer-journey-btn">START YOUR JOURNEY</a>
+            </div>
+            <div class="footer-right">
+                <h3>GALLERY</h3>
+                <div class="footer-gallery">
+                    <img src="images/services/1.jpg" alt="Gallery 1">
+                    <img src="images/services/2.jpg" alt="Gallery 2">
+                    <img src="images/services/3.jpg" alt="Gallery 3">
+                </div>
+            </div>
+        </div>
+        <div class="footer-partners">
+            <div class="partners-logos">
+                <img src="images/footer/select.png" alt="Select Registry">
+                <img src="images/footer/iatan.png" alt="IATAN">
+                <img src="images/footer/travel leaders.png" alt="Travel Leaders">
+                <img src="images/footer/luxury.png" alt="Luxury Leaders Alliance">
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

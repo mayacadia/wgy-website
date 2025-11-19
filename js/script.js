@@ -237,4 +237,36 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+// ===========================
+// CONTACT FORM HANDLING
+// ===========================
+
+const contactForm = document.getElementById('contactForm');
+const successModal = document.getElementById('successModal');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Show success modal
+        successModal.style.display = 'block';
+        
+        // Reset form
+        contactForm.reset();
+    });
+}
+
+function closeModal() {
+    if (successModal) {
+        successModal.style.display = 'none';
+    }
+}
+
+// Close modal when clicking outside of it
+window.addEventListener('click', function(event) {
+    if (event.target === successModal) {
+        closeModal();
+    }
+});
+
 console.log('🌍 WGY Travel - Landing Page Loaded');
