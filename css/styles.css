@@ -67,6 +67,12 @@ p {
     backdrop-filter: blur(15px);
     z-index: 1000;
     padding: 0;
+    transition: background 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.navbar.navbar-solid {
+    background: rgba(13, 17, 23, 0.95);
+    backdrop-filter: blur(20px);
 }
 
 .nav-container {
@@ -769,34 +775,136 @@ p {
 .testimonials-section {
     padding: 100px 0;
     background: var(--white);
+    overflow: visible;
+}
+
+.testimonials-section .section-title {
+    color: var(--text-dark);
+}
+
+.testimonials-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.testimonials-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 1rem;
+    gap: 2rem;
+    scroll-behavior: smooth;
+    cursor: grab;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.testimonials-scroll-container.grabbing {
+    cursor: grabbing;
+    scroll-behavior: auto;
+}
+
+.testimonials-scroll-container::-webkit-scrollbar {
+    display: none;
 }
 
 .testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    align-items: start;
+    display: contents;
 }
 
 .testimonial-card {
     background: var(--light-gray);
-    padding: 3rem 2rem;
+    padding: 2.5rem 2rem;
     text-align: center;
     min-height: 350px;
+    min-width: 350px;
+    max-width: 350px;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    scroll-snap-align: start;
+    pointer-events: none;
+}
+
+.testimonial-card * {
+    pointer-events: none;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Scroll Progress Indicator */
+.scroll-progress {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.scroll-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(196, 168, 112, 0.3);
+    transition: all 0.3s ease;
+}
+
+.scroll-dot.active {
+    background-color: #c4a870;
+    transform: scale(1.4);
 }
 
 .testimonial-card.gold {
-    background: var(--gold);
+    background: #c4a870;
     color: var(--white);
 }
 
+.testimonial-card h4 {
+    font-family: 'TT Drugs', 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+
+.testimonial-card.gold h4 {
+    color: var(--white);
+}
+
+.testimonial-date {
+    font-family: 'Glacial Indifference', 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    color: #999;
+    margin-bottom: 1rem;
+    pointer-events: none;
+}
+
+.testimonial-card.gold .testimonial-date {
+    color: rgba(255, 255, 255, 0.7);
+}
+
 .stars {
-    color: var(--gold);
+    color: #c4a870;
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
+    pointer-events: none;
 }
 
 .testimonial-card.gold .stars {
@@ -804,25 +912,16 @@ p {
 }
 
 .testimonial-card p {
+    font-family: 'Glacial Indifference', 'Montserrat', sans-serif;
     font-size: 0.9rem;
     line-height: 1.8;
-    margin-bottom: 2rem;
     font-weight: 300;
     font-style: italic;
+    color: var(--text-dark);
+    pointer-events: none;
 }
 
 .testimonial-card.gold p {
-    color: var(--white);
-}
-
-.testimonial-card h4 {
-    font-size: 0.85rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: var(--text-dark);
-}
-
-.testimonial-card.gold h4 {
     color: var(--white);
 }
 
@@ -1102,7 +1201,11 @@ p {
     }
 
     .testimonials-grid {
-        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .testimonial-card {
+        width: 300px;
     }
 
     .footer-container {
