@@ -270,152 +270,6 @@ window.addEventListener('click', function(event) {
 });
 
 // ===========================
-// ADVANCED DRAG SCROLL WITH MOMENTUM
-// ===========================
-
-class AdvancedDragScroll {
-    constructor(element) {
-        this.element = element;
-        this.isDragging = false;
-        this.startX = 0;
-        this.scrollLeft = 0;
-        this.velocity = 0;
-        this.momentum = null;
-        this.lastX = 0;
-        this.lastTime = 0;
-        
-        this.init();
-    }
-    
-    init() {
-        // Mouse events
-        this.element.addEventListener('mousedown', (e) => this.onPointerDown(e));
-        this.element.addEventListener('mousemove', (e) => this.onPointerMove(e));
-        this.element.addEventListener('mouseup', () => this.onPointerUp());
-        this.element.addEventListener('mouseleave', () => this.onPointerUp());
-        
-        // Touch events
-        this.element.addEventListener('touchstart', (e) => this.onPointerDown(e), { passive: true });
-        this.element.addEventListener('touchmove', (e) => this.onPointerMove(e), { passive: true });
-        this.element.addEventListener('touchend', () => this.onPointerUp());
-        
-        // Mouse wheel
-        this.element.addEventListener('wheel', (e) => {
-            e.preventDefault();
-            this.element.scrollLeft += e.deltaY;
-            this.updateProgressIndicator();
-        }, { passive: false });
-        
-        // Update progress on scroll
-        this.element.addEventListener('scroll', () => this.updateProgressIndicator());
-        
-        // Create progress indicator
-        this.createProgressIndicator();
-    }
-    
-    getPageX(e) {
-        return e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
-    }
-    
-    onPointerDown(e) {
-        this.isDragging = true;
-        this.element.classList.add('grabbing');
-        
-        const pageX = this.getPageX(e);
-        this.startX = pageX - this.element.offsetLeft;
-        this.scrollLeft = this.element.scrollLeft;
-        this.lastX = pageX;
-        this.lastTime = Date.now();
-        this.velocity = 0;
-        
-        // Cancel any ongoing momentum
-        if (this.momentum) {
-            cancelAnimationFrame(this.momentum);
-        }
-    }
-    
-    onPointerMove(e) {
-        if (!this.isDragging) return;
-        
-        e.preventDefault();
-        const pageX = this.getPageX(e);
-        const currentTime = Date.now();
-        const x = pageX - this.element.offsetLeft;
-        const distance = (x - this.startX) * 2.5; // Acceleration multiplier
-        
-        this.element.scrollLeft = this.scrollLeft - distance;
-        
-        // Calculate velocity for momentum
-        const timeDelta = currentTime - this.lastTime;
-        if (timeDelta > 0) {
-            this.velocity = (pageX - this.lastX) / timeDelta * 50;
-        }
-        
-        this.lastX = pageX;
-        this.lastTime = currentTime;
-    }
-    
-    onPointerUp() {
-        if (!this.isDragging) return;
-        
-        this.isDragging = false;
-        this.element.classList.remove('grabbing');
-        
-        // Apply momentum
-        this.applyMomentum();
-    }
-    
-    applyMomentum() {
-        if (Math.abs(this.velocity) > 0.5) {
-            this.element.scrollLeft -= this.velocity;
-            this.velocity *= 0.92; // Friction coefficient
-            
-            this.momentum = requestAnimationFrame(() => this.applyMomentum());
-        }
-    }
-    
-    createProgressIndicator() {
-        const cards = this.element.querySelectorAll('.testimonial-card');
-        if (cards.length <= 1) return;
-        
-        const wrapper = this.element.parentElement;
-        const progressContainer = document.createElement('div');
-        progressContainer.className = 'scroll-progress';
-        
-        cards.forEach((_, index) => {
-            const dot = document.createElement('div');
-            dot.className = 'scroll-dot';
-            if (index === 0) dot.classList.add('active');
-            progressContainer.appendChild(dot);
-        });
-        
-        wrapper.appendChild(progressContainer);
-    }
-    
-    updateProgressIndicator() {
-        const dots = this.element.parentElement.querySelectorAll('.scroll-dot');
-        const cards = this.element.querySelectorAll('.testimonial-card');
-        
-        if (dots.length === 0 || cards.length === 0) return;
-        
-        const scrollLeft = this.element.scrollLeft;
-        const cardWidth = cards[0].offsetWidth;
-        const gap = parseInt(window.getComputedStyle(this.element).gap) || 32;
-        const currentIndex = Math.round(scrollLeft / (cardWidth + gap));
-        
-        dots.forEach((dot, index) => {
-            dot.classList.toggle('active', index === currentIndex);
-        });
-    }
-}
-
-// Initialize advanced drag scroll
-const testimonialsContainer = document.querySelector('.testimonials-scroll-container');
-if (testimonialsContainer) {
-    new AdvancedDragScroll(testimonialsContainer);
-}
-
-// ===========================
 // NAVBAR OPACITY ON SCROLL
 // ===========================
 
@@ -441,5 +295,35 @@ function updateNavbarOpacity() {
 
 window.addEventListener('scroll', updateNavbarOpacity);
 window.addEventListener('load', updateNavbarOpacity);
+
+// ===========================
+// SERVICES PAGE - SECTION NAVIGATION
+// ===========================
+// Navigation is now handled by anchor links in HTML
+// Smooth scrolling is handled by the global smooth scroll handler above
+
+// ===========================
+// FAQ ACCORDION
+// ===========================
+document.addEventListener('DOMContentLoaded', function() {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const faqItem = question.parentElement;
+            const isActive = faqItem.classList.contains('active');
+            
+            // Close all other FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Toggle current item
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        });
+    });
+});
 
 console.log('🌍 WGY Travel - Landing Page Loaded');
