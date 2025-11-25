@@ -1,6 +1,14 @@
 /* ===========================
    CSS RESET & BASE STYLES
    =========================== */
+
+@font-face {
+    font-family: 'Alta';
+    src: url('../fonts/alta-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +32,7 @@ html {
 }
 
 body {
-    font-family: 'Alta', sans-serif;
+    font-family: 'Alta', serif;
     line-height: 1.6;
     color: var(--text-dark);
     overflow-x: hidden;
@@ -103,8 +111,8 @@ p {
 }
 
 .logo-text {
-    font-family: 'Alta', sans-serif;
-    font-size: 2.6rem;
+    font-family: 'Alta', serif;
+    font-size: 2.5rem;
     font-weight: 300;
     color: var(--white);
     letter-spacing: 4px;
@@ -118,7 +126,7 @@ p {
 
 .nav-link {
     color: #ece0bb;
-    font-size: 1.1rem;
+    font-size: 0.7rem;
     font-weight: 400;
     letter-spacing: 1.5px;
     transition: color 0.3s ease;
@@ -163,7 +171,7 @@ p {
     padding: 0.75rem 1.5rem;
     color: #ece0bb;
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     font-weight: 400;
     letter-spacing: 1px;
     transition: all 0.3s ease;
@@ -177,7 +185,7 @@ p {
 }
 
 .dropdown .arrow {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     margin-left: 5px;
 }
 
@@ -229,8 +237,8 @@ p {
 }
 
 .hero-title {
-    font-family: 'Alta', sans-serif;
-    font-size: 3.6rem;
+    font-family: 'Alta', serif;
+    font-size: 3.5rem;
     font-weight: 300;
     color: var(--white);
     margin-bottom: 1.5rem;
@@ -239,7 +247,7 @@ p {
 }
 
 .hero-subtitle {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--white);
     letter-spacing: 4px;
     font-weight: 300;
@@ -249,8 +257,8 @@ p {
    SECTION TITLES
    =========================== */
 .section-title {
-    font-family: 'Alta', sans-serif;
-    font-size: 2.3rem;
+    font-family: 'Alta', serif;
+    font-size: 2.2rem;
     font-weight: 400;
     color: var(--gold);
     text-align: center;
@@ -343,8 +351,8 @@ p {
 }
 
 .welcome-title {
-    font-family: 'Alta', sans-serif;
-    font-size: 2.6rem;
+    font-family: 'Alta', serif;
+    font-size: 2.5rem;
     font-weight: 400;
     color: var(--gold);
     margin-bottom: 2rem;
@@ -352,7 +360,7 @@ p {
 }
 
 .welcome-text p {
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     line-height: 1.8;
     color: rgba(255, 255, 255, 0.85);
     margin-bottom: 1.5rem;
@@ -365,7 +373,7 @@ p {
     padding: 12px 35px;
     border: 1px solid var(--gold);
     color: var(--gold);
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     letter-spacing: 2px;
     transition: all 0.3s ease;
 }
@@ -399,7 +407,7 @@ p {
 }
 
 .large-logo {
-    font-family: 'Alta', sans-serif;
+    font-family: 'Alta', serif;
     font-size: 15rem;
     font-weight: 300;
     color: rgba(201, 169, 97, 0.15);
@@ -468,8 +476,8 @@ p {
 }
 
 .service-overlay h3 {
-    font-family: 'Alta', sans-serif;
-    font-size: 1.1rem;
+    font-family: 'Alta', serif;
+    font-size: 0.85rem;
     font-weight: 400;
     color: var(--gold);
     letter-spacing: 1.5px;
@@ -545,8 +553,8 @@ p {
 }
 
 .destination-content h2 {
-    font-family: 'Alta', sans-serif;
-    font-size: 3.1rem;
+    font-family: 'Alta', serif;
+    font-size: 3rem;
     font-weight: 400;
     letter-spacing: 3px;
     margin-bottom: 1rem;
@@ -554,7 +562,7 @@ p {
 
 .destination-content p {
     font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 300;
     letter-spacing: 1px;
     margin-bottom: 2rem;
@@ -566,11 +574,11 @@ p {
     border: 1px solid var(--gold);
     background: transparent;
     color: var(--gold);
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     letter-spacing: 2px;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-family: 'Alta', sans-serif;
+    font-family: 'Alta', serif;
 }
 
 .view-more-btn:hover {
@@ -585,7 +593,7 @@ p {
     background: transparent;
     border: none;
     color: var(--gold);
-    font-size: 3.1rem;
+    font-size: 3rem;
     width: 60px;
     height: 60px;
     display: flex;
@@ -700,7 +708,7 @@ p {
     background: transparent;
     border: none;
     color: var(--gold);
-    font-size: 3.1rem;
+    font-size: 3rem;
     cursor: pointer;
     z-index: 102;
     transition: color 0.3s ease;
@@ -718,7 +726,7 @@ p {
     background: rgba(201, 169, 97, 0.1);
     border: 1px solid var(--gold);
     color: var(--gold);
-    font-size: 2.6rem;
+    font-size: 2.5rem;
     width: 50px;
     height: 50px;
     display: flex;
@@ -747,8 +755,8 @@ p {
 }
 
 .modal-title {
-    font-family: 'Alta', sans-serif;
-    font-size: 2.3rem;
+    font-family: 'Alta', serif;
+    font-size: 2.2rem;
     color: var(--gold);
     letter-spacing: 3px;
     margin-bottom: 2rem;
@@ -770,7 +778,7 @@ p {
 
 .modal-description {
     font-family: 'Inter', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--white);
     line-height: 1.8;
 }
@@ -859,8 +867,8 @@ p {
 }
 
 .testimonial-card h4 {
-    font-family: 'Alta', sans-serif;
-    font-size: 0.9rem;
+    font-family: 'Alta', serif;
+    font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 1px;
     color: var(--text-dark);
@@ -875,7 +883,7 @@ p {
 
 .testimonial-date {
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     color: #999;
     margin-bottom: 1rem;
     pointer-events: none;
@@ -887,7 +895,7 @@ p {
 
 .stars {
     color: #c4a870;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 1.5rem;
     pointer-events: none;
 }
@@ -898,7 +906,7 @@ p {
 
 .testimonial-card p {
     font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     line-height: 1.8;
     font-weight: 300;
     font-style: italic;
@@ -981,8 +989,8 @@ p {
 
 .footer-left h3,
 .footer-right h3 {
-    font-family: 'Alta', sans-serif;
-    font-size: 1.3rem;
+    font-family: 'Alta', serif;
+    font-size: 1.2rem;
     font-weight: 400;
     letter-spacing: 3px;
     margin-bottom: 0.5rem;
@@ -991,7 +999,7 @@ p {
 
 .footer-subtitle {
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     font-weight: 300;
     letter-spacing: 1px;
     margin-bottom: 2rem;
@@ -1004,7 +1012,7 @@ p {
 
 .footer-contact p {
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     font-weight: 300;
     line-height: 1.8;
     color: #ece0bb;
@@ -1029,7 +1037,7 @@ p {
     align-items: center;
     justify-content: center;
     color: #ece0bb;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     transition: all 0.3s ease;
 }
 
@@ -1058,8 +1066,8 @@ p {
     border: 1px solid var(--gold);
     background: transparent;
     color: var(--gold);
-    font-family: 'Alta', sans-serif;
-    font-size: 1.1rem;
+    font-family: 'Alta', serif;
+    font-size: 0.85rem;
     letter-spacing: 2px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -1196,11 +1204,11 @@ p {
     }
 
     .hero-title {
-        font-size: 2.6rem;
+        font-size: 2.5rem;
     }
 
     .hero-subtitle {
-        font-size: 1.1rem;
+        font-size: 0.85rem;
     }
 
     .services-grid {
@@ -1271,8 +1279,8 @@ p {
 }
 
 .page-hero-title {
-    font-family: 'Alta', sans-serif;
-    font-size: 3.6rem;
+    font-family: 'Alta', serif;
+    font-size: 3.5rem;
     font-weight: 400;
     letter-spacing: 4px;
     margin-bottom: 1rem;
@@ -1280,8 +1288,8 @@ p {
 }
 
 .page-hero-subtitle {
-    font-family: 'Alta', sans-serif;
-    font-size: 0.9rem;
+    font-family: 'Alta', serif;
+    font-size: 0.85rem;
     font-weight: 300;
     letter-spacing: 3px;
     margin-bottom: 3rem;
@@ -1294,7 +1302,7 @@ p {
 
 .page-hero-text p {
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     font-weight: 300;
     line-height: 1.8;
     margin-bottom: 1.5rem;
@@ -1312,8 +1320,8 @@ p {
 }
 
 .tailored-title {
-    font-family: 'Alta', sans-serif;
-    font-size: 2.3rem;
+    font-family: 'Alta', serif;
+    font-size: 2.2rem;
     font-weight: 400;
     letter-spacing: 3px;
     text-align: center;
@@ -1330,7 +1338,7 @@ p {
 
 .tailored-content p {
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     font-weight: 300;
     line-height: 1.8;
     margin-bottom: 1.5rem;
@@ -1358,8 +1366,8 @@ p {
 }
 
 .services-hero-title {
-    font-family: 'Alta', sans-serif;
-    font-size: 4.2rem;
+    font-family: 'Alta', serif;
+    font-size: 4rem;
     font-weight: 400;
     letter-spacing: 8px;
     margin-bottom: 1rem;
@@ -1369,7 +1377,7 @@ p {
 
 .services-hero-subtitle {
     font-family: 'Inter', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     letter-spacing: 3px;
     color: rgba(255, 255, 255, 0.9);
     font-weight: 300;
@@ -1429,16 +1437,16 @@ p {
 }
 
 .service-nav-number {
-    font-family: 'Alta', sans-serif;
-    font-size: 3.1rem;
+    font-family: 'Alta', serif;
+    font-size: 3rem;
     color: var(--gold);
     opacity: 0.8;
     margin-bottom: 20px;
 }
 
 .service-nav-title {
-    font-family: 'Alta', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Alta', serif;
+    font-size: 1.2rem;
     letter-spacing: 2px;
     color: var(--white);
     margin-bottom: 15px;
@@ -1446,14 +1454,14 @@ p {
 
 .service-nav-desc {
     font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
 .service-nav-icon {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     color: var(--gold);
     transition: transform 0.3s ease;
 }
@@ -1491,7 +1499,7 @@ p {
 
 .service-banner-label {
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     letter-spacing: 3px;
     color: var(--gold);
     display: block;
@@ -1499,8 +1507,8 @@ p {
 }
 
 .service-banner-title {
-    font-family: 'Alta', sans-serif;
-    font-size: 4.2rem;
+    font-family: 'Alta', serif;
+    font-size: 4rem;
     letter-spacing: 6px;
     color: var(--white);
     margin-bottom: 15px;
@@ -1508,7 +1516,7 @@ p {
 
 .service-banner-tagline {
     font-family: 'Inter', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-style: italic;
     color: rgba(255, 255, 255, 0.9);
     letter-spacing: 1px;
@@ -1527,7 +1535,7 @@ p {
 
 .service-intro-text {
     font-family: 'Inter', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.9;
     color: #333;
     font-weight: 300;
@@ -1535,8 +1543,8 @@ p {
 
 /* Service Section Title */
 .service-section-title {
-    font-family: 'Alta', sans-serif;
-    font-size: 2.3rem;
+    font-family: 'Alta', serif;
+    font-size: 2.2rem;
     letter-spacing: 3px;
     color: var(--dark-navy);
     text-align: center;
@@ -1588,15 +1596,15 @@ p {
 }
 
 .feature-number {
-    font-family: 'Alta', sans-serif;
-    font-size: 3.1rem;
+    font-family: 'Alta', serif;
+    font-size: 3rem;
     color: var(--gold);
     opacity: 0.6;
 }
 
 .feature-title {
-    font-family: 'Alta', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Alta', serif;
+    font-size: 1.2rem;
     letter-spacing: 2px;
     color: var(--dark-navy);
     margin-bottom: 15px;
@@ -1604,7 +1612,7 @@ p {
 
 .feature-description {
     font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     line-height: 1.8;
     color: #555;
 }
@@ -1660,20 +1668,20 @@ p {
 }
 
 .advantage-icon-wrapper i {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--dark-navy);
 }
 
 .advantage-title {
-    font-family: 'Alta', sans-serif;
-    font-size: 2.3rem;
+    font-family: 'Alta', serif;
+    font-size: 2.2rem;
     letter-spacing: 2px;
     color: var(--gold);
 }
 
 .advantage-text {
     font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     line-height: 1.8;
     color: rgba(255, 255, 255, 0.9);
 }
@@ -1689,8 +1697,8 @@ p {
     padding: 20px 60px;
     background: var(--gold);
     color: var(--white);
-    font-family: 'Alta', sans-serif;
-    font-size: 0.9rem;
+    font-family: 'Alta', serif;
+    font-size: 0.85rem;
     letter-spacing: 3px;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -1767,8 +1775,8 @@ p {
 }
 
 .key-number {
-    font-family: 'Alta', sans-serif;
-    font-size: 2.6rem;
+    font-family: 'Alta', serif;
+    font-size: 2.5rem;
     color: var(--gold);
     display: block;
     margin-bottom: 20px;
@@ -1776,8 +1784,8 @@ p {
 }
 
 .key-title {
-    font-family: 'Alta', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Alta', serif;
+    font-size: 1.2rem;
     letter-spacing: 1px;
     color: var(--white);
     margin-bottom: 15px;
@@ -1786,7 +1794,7 @@ p {
 
 .key-desc {
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.95);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -1827,8 +1835,8 @@ p {
 }
 
 .why-number {
-    font-family: 'Alta', sans-serif;
-    font-size: 2.6rem;
+    font-family: 'Alta', serif;
+    font-size: 2.5rem;
     color: var(--gold);
     opacity: 0.6;
     display: block;
@@ -1836,8 +1844,8 @@ p {
 }
 
 .why-title {
-    font-family: 'Alta', sans-serif;
-    font-size: 1.4rem;
+    font-family: 'Alta', serif;
+    font-size: 1.2rem;
     letter-spacing: 1px;
     color: var(--dark-navy);
     margin-bottom: 15px;
@@ -1845,7 +1853,7 @@ p {
 
 .why-desc {
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     line-height: 1.7;
     color: #555;
 }
@@ -1953,8 +1961,8 @@ p {
 }
 
 .signature-title {
-    font-family: 'Alta', sans-serif;
-    font-size: 1.4rem;
+    font-family: 'Alta', serif;
+    font-size: 1.2rem;
     letter-spacing: 1px;
     color: var(--white);
     margin-bottom: 15px;
@@ -1963,7 +1971,7 @@ p {
 
 .signature-desc {
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.95);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -1976,8 +1984,8 @@ p {
 }
 
 .tagline-text {
-    font-family: 'Alta', sans-serif;
-    font-size: 2.3rem;
+    font-family: 'Alta', serif;
+    font-size: 2.2rem;
     letter-spacing: 3px;
     color: var(--dark-navy);
     margin-bottom: 20px;
@@ -1985,7 +1993,7 @@ p {
 
 .entertainment-tagline .advantage-text {
     color: var(--dark-navy);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 /* Concierge Services Styles */
@@ -2052,7 +2060,7 @@ p {
 }
 
 .concierge-icon i {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     color: var(--gold);
     transition: color 0.3s ease;
 }
@@ -2062,8 +2070,8 @@ p {
 }
 
 .concierge-service-title {
-    font-family: 'Alta', sans-serif;
-    font-size: 1.3rem;
+    font-family: 'Alta', serif;
+    font-size: 1.2rem;
     letter-spacing: 1px;
     color: var(--dark-navy);
     margin-bottom: 15px;
@@ -2072,7 +2080,7 @@ p {
 
 .concierge-service-desc {
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     line-height: 1.7;
     color: #666;
 }
@@ -2113,8 +2121,8 @@ p {
 }
 
 .faq-main-title {
-    font-family: 'Alta', sans-serif;
-    font-size: 3.1rem;
+    font-family: 'Alta', serif;
+    font-size: 3rem;
     letter-spacing: 4px;
     color: var(--dark-navy);
     text-align: center;
@@ -2123,7 +2131,7 @@ p {
 
 .faq-subtitle {
     font-family: 'Inter', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #666;
     text-align: center;
     margin-bottom: 60px;
@@ -2167,24 +2175,24 @@ p {
 }
 
 .faq-number {
-    font-family: 'Alta', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Alta', serif;
+    font-size: 1.2rem;
     color: var(--gold);
     opacity: 0.6;
     flex-shrink: 0;
 }
 
 .faq-text {
-    font-family: 'Alta', sans-serif;
-    font-size: 1.3rem;
+    font-family: 'Alta', serif;
+    font-size: 1.2rem;
     color: var(--dark-navy);
     letter-spacing: 1px;
     flex-grow: 1;
 }
 
 .faq-icon {
-    font-family: 'Alta', sans-serif;
-    font-size: 2.3rem;
+    font-family: 'Alta', serif;
+    font-size: 2.2rem;
     color: var(--gold);
     flex-shrink: 0;
     transition: transform 0.3s ease;
@@ -2208,7 +2216,7 @@ p {
 
 .faq-answer p {
     font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     line-height: 1.8;
     color: #555;
     margin: 0;
@@ -2223,12 +2231,12 @@ p {
     }
 
     .services-hero-title {
-        font-size: 2.6rem;
+        font-size: 2.5rem;
         letter-spacing: 4px;
     }
 
     .service-banner-title {
-        font-size: 2.6rem;
+        font-size: 2.5rem;
         letter-spacing: 3px;
     }
 
@@ -2270,7 +2278,7 @@ p {
     }
 
     .faq-main-title {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
         letter-spacing: 2px;
     }
 
@@ -2280,20 +2288,20 @@ p {
     }
 
     .faq-number {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .faq-text {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .faq-icon {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .faq-answer p {
         padding-left: 0;
-        font-size: 1.1rem;
+        font-size: 0.85rem;
     }
 
     .faq-item.active .faq-answer {
@@ -2338,8 +2346,8 @@ p {
 }
 
 .service-detail-content h2 {
-    font-family: 'Alta', sans-serif;
-    font-size: 2.6rem;
+    font-family: 'Alta', serif;
+    font-size: 2.5rem;
     font-weight: 400;
     letter-spacing: 3px;
     margin-bottom: 2rem;
@@ -2349,7 +2357,7 @@ p {
 
 .service-detail-content p {
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     font-weight: 300;
     line-height: 1.8;
     margin-bottom: 1.5rem;
@@ -2361,8 +2369,8 @@ p {
 }
 
 .service-detail-content h2 {
-    font-family: 'Alta', sans-serif;
-    font-size: 2.6rem;
+    font-family: 'Alta', serif;
+    font-size: 2.5rem;
     font-weight: 400;
     letter-spacing: 3px;
     margin-bottom: 2rem;
@@ -2390,8 +2398,8 @@ p {
 }
 
 .service-detail-content-full h2 {
-    font-family: 'Alta', sans-serif;
-    font-size: 2.6rem;
+    font-family: 'Alta', serif;
+    font-size: 2.5rem;
     font-weight: 400;
     letter-spacing: 3px;
     margin-bottom: 2rem;
@@ -2400,7 +2408,7 @@ p {
 
 .service-detail-content-full p {
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     font-weight: 300;
     line-height: 1.8;
     margin-bottom: 1.5rem;
@@ -2413,8 +2421,8 @@ p {
     border: 2px solid var(--gold);
     background: transparent;
     color: var(--gold);
-    font-family: 'Alta', sans-serif;
-    font-size: 1.1rem;
+    font-family: 'Alta', serif;
+    font-size: 0.85rem;
     letter-spacing: 2px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -2432,11 +2440,11 @@ p {
    =========================== */
 @media (max-width: 768px) {
     .page-hero-title {
-        font-size: 2.6rem;
+        font-size: 2.5rem;
     }
 
     .page-hero-subtitle {
-        font-size: 1.1rem;
+        font-size: 0.85rem;
     }
 
     .page-hero-content {
@@ -2463,7 +2471,7 @@ p {
 
     .service-detail-content h2,
     .service-detail-content-full h2 {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
     }
 
     .container {
@@ -2475,21 +2483,21 @@ p {
     }
 
     .destination-content h2 {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
     }
 }
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
     }
 
     .logo-text {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
     }
 
     .section-title {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .partners-grid {
@@ -2517,8 +2525,8 @@ p {
 }
 
 .about-content-text h2 {
-    font-family: 'Alta', sans-serif;
-    font-size: 3.1rem;
+    font-family: 'Alta', serif;
+    font-size: 3rem;
     color: var(--gold);
     margin-bottom: 2rem;
     letter-spacing: 2px;
@@ -2526,7 +2534,7 @@ p {
 
 .about-content-text p {
     font-family: 'Inter', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.8;
     color: #fff;
     margin-bottom: 1.5rem;
@@ -2579,8 +2587,8 @@ p {
 }
 
 .about-detail-text h2 {
-    font-family: 'Alta', sans-serif;
-    font-size: 3.1rem;
+    font-family: 'Alta', serif;
+    font-size: 3rem;
     color: var(--gold);
     margin-bottom: 2rem;
     letter-spacing: 2px;
@@ -2588,7 +2596,7 @@ p {
 
 .about-detail-text p {
     font-family: 'Inter', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.8;
     color: #fff;
     margin-bottom: 1.5rem;
@@ -2613,8 +2621,8 @@ p {
     padding: 1rem 2.5rem;
     background-color: var(--gold);
     color: var(--dark-navy);
-    font-family: 'Alta', sans-serif;
-    font-size: 0.9rem;
+    font-family: 'Alta', serif;
+    font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 1.5px;
     border: none;
@@ -2646,7 +2654,7 @@ p {
     }
 
     .about-content-text h2 {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
     }
 
     .about-detail-section {
@@ -2667,16 +2675,16 @@ p {
     }
 
     .about-detail-text h2 {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
     }
 
     .about-detail-text p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .read-more-btn {
         padding: 0.8rem 2rem;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 }
 
@@ -2705,8 +2713,8 @@ p {
 }
 
 .contact-hero-title {
-    font-family: 'Alta', sans-serif;
-    font-size: 3.1rem;
+    font-family: 'Alta', serif;
+    font-size: 3rem;
     font-weight: 400;
     letter-spacing: 3px;
     margin-bottom: 3rem;
@@ -2721,8 +2729,8 @@ p {
     border: 2px solid var(--gold);
     background: transparent;
     color: var(--gold);
-    font-family: 'Alta', sans-serif;
-    font-size: 0.9rem;
+    font-family: 'Alta', serif;
+    font-size: 0.85rem;
     letter-spacing: 2px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -2760,8 +2768,8 @@ p {
 }
 
 .office-location-text h2 {
-    font-family: 'Alta', sans-serif;
-    font-size: 2.6rem;
+    font-family: 'Alta', serif;
+    font-size: 2.5rem;
     font-weight: 400;
     letter-spacing: 3px;
     color: #c4a870;
@@ -2770,8 +2778,8 @@ p {
 }
 
 .office-address {
-    font-family: 'Alta', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Alta', serif;
+    font-size: 1.2rem;
     font-weight: 400;
     color: var(--text-dark);
     margin-bottom: 0.5rem;
@@ -2779,8 +2787,8 @@ p {
 }
 
 .office-city {
-    font-family: 'Alta', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Alta', serif;
+    font-size: 1.2rem;
     font-weight: 400;
     color: var(--text-dark);
     letter-spacing: 1px;
@@ -2813,8 +2821,8 @@ p {
 }
 
 .contact-form-title {
-    font-family: 'Alta', sans-serif;
-    font-size: 2.6rem;
+    font-family: 'Alta', serif;
+    font-size: 2.5rem;
     font-weight: 400;
     letter-spacing: 3px;
     color: var(--white);
@@ -2846,8 +2854,8 @@ p {
 
 .form-group label,
 .form-group-full label {
-    font-family: 'Alta', sans-serif;
-    font-size: 1.1rem;
+    font-family: 'Alta', serif;
+    font-size: 0.85rem;
     letter-spacing: 1px;
     color: var(--white);
     margin-bottom: 0.5rem;
@@ -2862,7 +2870,7 @@ p {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     padding: 0.75rem 0;
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     color: var(--white);
     outline: none;
     transition: border-color 0.3s ease;
@@ -2891,8 +2899,8 @@ p {
     background: transparent;
     border: 2px solid var(--gold);
     color: var(--gold);
-    font-family: 'Alta', sans-serif;
-    font-size: 0.9rem;
+    font-family: 'Alta', serif;
+    font-size: 0.85rem;
     letter-spacing: 2px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -2940,8 +2948,8 @@ p {
 }
 
 .modal-title {
-    font-family: 'Alta', sans-serif;
-    font-size: 2.3rem;
+    font-family: 'Alta', serif;
+    font-size: 2.2rem;
     font-weight: 400;
     letter-spacing: 2px;
     color: var(--white);
@@ -2950,7 +2958,7 @@ p {
 
 .modal-text {
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.9);
     margin-bottom: 2rem;
     line-height: 1.6;
@@ -2961,8 +2969,8 @@ p {
     background: transparent;
     border: 2px solid var(--gold);
     color: var(--gold);
-    font-family: 'Alta', sans-serif;
-    font-size: 1.1rem;
+    font-family: 'Alta', serif;
+    font-size: 0.85rem;
     letter-spacing: 2px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -2998,7 +3006,7 @@ p {
     }
 
     .contact-form-title {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
     }
 
     .modal-content {
@@ -3007,7 +3015,7 @@ p {
     }
 
     .modal-title {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .office-location-container {
@@ -3020,12 +3028,12 @@ p {
     }
 
     .office-location-text h2 {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
     }
 
     .office-address,
     .office-city {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .office-location-map iframe {
@@ -3033,19 +3041,19 @@ p {
     }
 
     .contact-hero-title {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
         margin-bottom: 2rem;
     }
 
     .contact-hero-btn {
         padding: 15px 35px;
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 }
 
 @media (max-width: 480px) {
     .contact-form-title {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .modal-content {
@@ -3053,20 +3061,20 @@ p {
     }
 
     .modal-title {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .modal-text {
-        font-size: 1.1rem;
+        font-size: 0.85rem;
     }
 
     .office-location-text h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .office-address,
     .office-city {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .office-location-map iframe {
@@ -3074,12 +3082,12 @@ p {
     }
 
     .contact-hero-title {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .contact-hero-btn {
         padding: 12px 30px;
-        font-size: 1.1rem;
+        font-size: 0.85rem;
     }
 }
 
@@ -3088,18 +3096,15 @@ p {
    =========================== */
 
 .terms-section {
-    background: linear-gradient(rgba(13, 17, 23, 0.85), rgba(13, 17, 23, 0.85)), url('../images/services/4.jpeg') center/cover fixed;
+    background: #f5f1e8;
     padding: 6rem 0;
 }
 
 .terms-content {
     max-width: 1000px;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: #faf8f3;
     padding: 4rem;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-    border-radius: 2px;
 }
 
 .terms-block {
@@ -3107,8 +3112,8 @@ p {
 }
 
 .terms-main-title {
-    font-family: 'Alta', sans-serif;
-    font-size: 2.6rem;
+    font-family: 'Alta', serif;
+    font-size: 2.5rem;
     color: var(--navy);
     text-align: center;
     margin-bottom: 2rem;
@@ -3130,7 +3135,7 @@ p {
 
 .terms-intro {
     font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     line-height: 1.8;
     color: #444;
     margin-bottom: 3rem;
@@ -3152,7 +3157,7 @@ p {
 
 .terms-item h3 {
     font-family: 'Inter', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: var(--navy);
     margin-bottom: 1rem;
     font-weight: 600;
@@ -3167,7 +3172,7 @@ p {
 
 .terms-item p {
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     line-height: 1.8;
     color: #555;
     margin-bottom: 1rem;
@@ -3182,7 +3187,7 @@ p {
 
 .terms-item ul li {
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     line-height: 1.8;
     color: #555;
     padding-left: 2rem;
@@ -3212,7 +3217,7 @@ p {
 
 .fee-subsection h4 {
     font-family: 'Inter', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--navy);
     margin-bottom: 1rem;
     font-weight: 600;
@@ -3233,7 +3238,7 @@ p {
 
 .terms-update {
     font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #888;
     margin-bottom: 1rem;
     font-style: italic;
@@ -3241,7 +3246,7 @@ p {
 
 .terms-contact {
     font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #555;
 }
 
@@ -3263,17 +3268,17 @@ p {
     }
 
     .terms-main-title {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
     }
 
     .terms-item h3 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .terms-intro,
     .terms-item p,
     .terms-item ul li {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         text-align: left;
     }
 
@@ -3281,6 +3286,9 @@ p {
         padding: 1rem;
     }
 }
+
+
+
 
 
 
