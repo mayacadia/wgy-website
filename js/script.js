@@ -35,7 +35,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             const offsetTop = target.offsetTop - 65;
             const currentPosition = window.pageYOffset;
             const distance = offsetTop - currentPosition;
-            const duration = 1200; // Slower scroll duration (1.2 seconds)
+            const duration = 2000; // Slower scroll duration (2 seconds)
             let start = null;
             
             function animation(currentTime) {
@@ -290,7 +290,6 @@ window.addEventListener('click', function(event) {
 // NAVBAR OPACITY ON SCROLL
 // ===========================
 
-const navbar = document.querySelector('.navbar');
 const lightSections = document.querySelectorAll('.testimonials-section, .airline-partners-section, .partners-section, .tailored-section, .office-location-section');
 
 function updateNavbarOpacity() {
