@@ -1355,8 +1355,10 @@ p {
     margin: 0 auto;
     padding: 0 40px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+    justify-content: center;
+    max-width: 900px;
 }
 
 .service-nav-card {
@@ -1577,12 +1579,30 @@ p {
 .service-advantages {
     max-width: 1200px;
     margin: 0 auto 80px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.service-section-title {
+    grid-column: 1 / -1;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .service-advantages {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-section-title {
+        grid-column: 1;
+    }
 }
 
 .advantage-card {
     background: linear-gradient(135deg, var(--dark-navy) 0%, #2a3142 100%);
     padding: 50px;
-    margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
@@ -1691,9 +1711,45 @@ p {
 
 .signature-services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin-top: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+}
+
+.signature-service-card {
+    width: 100%;
+}
+
+.signature-service-card:nth-child(5) {
+    grid-column: 1 / -1;
+    max-width: 370px;
+}
+
+@media (min-width: 1024px) {
+    .signature-services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1000px;
+    }
+    
+    .signature-service-card:nth-child(5) {
+        grid-column: auto;
+        max-width: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .signature-services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .signature-service-card:nth-child(5) {
+        grid-column: 1;
+        max-width: none;
+    }
 }
 
 .signature-service-card {

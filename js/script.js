@@ -33,10 +33,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         
         if (target) {
             const offsetTop = target.offsetTop - 65;
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
+            const currentPosition = window.pageYOffset;
+            const distance = offsetTop - currentPosition;
+            const duration = 1200; // Slower scroll duration (1.2 seconds)
+            let start = null;
+            
+            function animation(currentTime) {
+                if (start === null) start = currentTime;
+                const timeElapsed = currentTime - start;
+                const run = ease(timeElapsed, currentPosition, distance, duration);
+                window.scrollTo(0, run);
+                if (timeElapsed < duration) requestAnimationFrame(animation);
+            }
+            
+            function ease(t, b, c, d) {
+                t /= d / 2;
+                if (t < 1) return c / 2 * t * t + b;
+                t--;
+                return -c / 2 * (t * (t - 2) - 1) + b;
+            }
+            
+            requestAnimationFrame(animation);
         }
     });
 });

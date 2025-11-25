@@ -48,15 +48,12 @@
                 <li class="dropdown">
                     <a href="services.html" class="nav-link">OUR SERVICES <span class="arrow">▼</span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="services.html#private-leisure">Private & Luxury Leisure Travel</a></li>
-                        <li><a href="services.html#vip-access">VIP & Exclusive Access</a></li>
-                        <li><a href="services.html#private-aviation">Private Aviation & Luxury Transport</a></li>
-                        <li><a href="services.html#culinary">Culinary & Fine Dining Experiences</a></li>
-                        <li><a href="services.html#wellness">Wellness & Transformational Retreats</a></li>
-                        <li><a href="services.html#concierge">Concierge & Lifestyle Management</a></li>
+                        <li><a href="services.html#leisure-travel">Leisure Travel</a></li>
+                        <li><a href="services.html#entertainment-travel">Entertainment Travel</a></li>
                     </ul>
                 </li>
-                <li><a href="https://wgy.inc" class="nav-link">CORPORATE</a></li>
+                <li><a href="terms.html" class="nav-link">TERMS & CONDITIONS</a></li>
+                <li><a href="https://wgy.inc" class="nav-link" target="_blank">CORPORATE</a></li>
                 <li><a href="contact.html" class="nav-link">CONTACT</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -72,28 +69,6 @@
         <div class="contact-hero-content">
             <h1 class="contact-hero-title">LET'S PLAN YOUR DREAM GETAWAY - CONTACT US TODAY!</h1>
             <a href="#contact-form-section" class="contact-hero-btn">BOOK A CONSULTATION</a>
-        </div>
-    </section>
-
-    <!-- Office Location Section -->
-    <section class="office-location-section">
-        <div class="office-location-container">
-            <div class="office-location-text">
-                <h2>COME BY OUR OFFICE</h2>
-                <p class="office-address">9851 NW 5B STREET UNIT 123</p>
-                <p class="office-city">DORAL FLORIDA, USA</p>
-            </div>
-            <div class="office-location-map">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.234567890123!2d-80.356528!3d25.826524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDQ5JzM1LjUiTiA4MMKwMjEnMjMuNSJX!5e0!3m2!1sen!2sus!4v1637000000000!5m2!1sen!2sus" 
-                    width="100%" 
-                    height="450" 
-                    style="border:3px solid var(--gold); border-radius: 10px;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
         </div>
     </section>
 
@@ -126,12 +101,12 @@
 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="travelDate">TRAVEL DATE*</label>
-                        <input type="date" id="travelDate" name="travelDate" required placeholder="dd/mm/yyyy">
+                        <label for="tripStart">START OF TRIP*</label>
+                        <input type="date" id="tripStart" name="tripStart" required placeholder="dd/mm/yyyy">
                     </div>
                     <div class="form-group">
-                        <label for="travelTime">TRAVEL TIME*</label>
-                        <input type="time" id="travelTime" name="travelTime" required>
+                        <label for="tripEnd">END OF TRIP*</label>
+                        <input type="date" id="tripEnd" name="tripEnd" required placeholder="dd/mm/yyyy">
                     </div>
                 </div>
 
@@ -141,8 +116,8 @@
                 </div>
 
                 <div class="form-group-full">
-                    <label for="specialRequest">SPECIAL REQUEST</label>
-                    <textarea id="specialRequest" name="specialRequest" rows="4"></textarea>
+                    <label for="inquiry">INQUIRY</label>
+                    <textarea id="inquiry" name="inquiry" rows="4"></textarea>
                 </div>
 
                 <button type="submit" class="contact-submit-btn">SUBMIT</button>
