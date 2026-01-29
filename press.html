@@ -141,67 +141,6 @@
       </div>
     </section>
 
-    <script>
-      (function () {
-        // Try to load images from a manifest first, otherwise try numbered filenames
-        const tryManifestThenNumbered = async (
-          dir,
-          containerId,
-          maxTry = 24,
-        ) => {
-          const container = document.getElementById(containerId);
-          if (!container) return;
-
-          // Helper to append image
-          const appendImg = (src, alt = "") => {
-            const img = document.createElement("img");
-            img.src = src;
-            img.alt = alt;
-            img.loading = "lazy";
-            container.appendChild(img);
-          };
-
-          // 1) Try manifest.json
-          try {
-            const res = await fetch(dir + "/manifest.json");
-            if (res.ok) {
-              const list = await res.json();
-              if (Array.isArray(list) && list.length) {
-                list.forEach((name) => appendImg(dir + "/" + name, name));
-                return;
-              }
-            }
-          } catch (e) {
-            // ignore
-          }
-
-          // 2) Fallback: try numbered filenames with common extensions
-          const exts = ["jpg", "jpeg", "png", "webp"];
-          for (let i = 1; i <= maxTry; i++) {
-            let found = false;
-            for (const ext of exts) {
-              const path = `${dir}/${i}.${ext}`;
-              try {
-                const r = await fetch(path, { method: "HEAD" });
-                if (r.ok) {
-                  appendImg(path, `${i}.${ext}`);
-                  found = true;
-                  break;
-                }
-              } catch (e) {}
-            }
-            // stop early if none of the extensions were found for several consecutive tries
-          }
-        };
-
-        // Load both folders
-        document.addEventListener("DOMContentLoaded", () => {
-          tryManifestThenNumbered("images/press/articles", "pressArticles", 20);
-          tryManifestThenNumbered("images/press/logos", "pressLogos", 48);
-        });
-      })();
-    </script>
-
     <!-- Footer (copied) -->
     <footer id="contact" class="footer">
       <div class="footer-container">
