@@ -3,11 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Contact WGY Travel - Let's plan your dream getaway"
-    />
-    <title>Contact Us - WGY Travel</title>
+    <meta name="description" content="WGY Travel - Press & Media" />
+    <title>Press - WGY Travel</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -88,128 +85,124 @@
       </div>
     </nav>
 
-    <!-- Contact Hero Section -->
+    <!-- Press Hero -->
     <section
-      class="contact-hero"
+      class="page-hero"
       style="
         background:
-          linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
-          url(&quot;images/contact/contact1.png&quot;) center/cover;
+          linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url(&quot;images/aboutpage/about1.jpg&quot;) center/cover fixed;
       "
     >
-      <div class="contact-hero-content">
-        <h1 class="contact-hero-title">
-          LET'S PLAN YOUR DREAM GETAWAY - CONTACT US TODAY!
-        </h1>
-        <a href="#contact-form-section" class="contact-hero-btn"
-          >BOOK A CONSULTATION</a
-        >
-      </div>
-    </section>
-
-    <!-- Get In Touch Form Section -->
-    <section
-      class="contact-form-section"
-      id="contact-form-section"
-      style="
-        background:
-          linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-          url(&quot;images/contact/contact2.jpg&quot;) center/cover fixed;
-      "
-    >
-      <div class="contact-form-container">
-        <h2 class="contact-form-title">GET IN TOUCH</h2>
-        <form id="contactForm" class="contact-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="firstName">FIRST NAME*</label>
-              <input type="text" id="firstName" name="firstName" required />
-            </div>
-            <div class="form-group">
-              <label for="lastName">LAST NAME*</label>
-              <input type="text" id="lastName" name="lastName" required />
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">EMAIL*</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="form-group">
-              <label for="destination">TARGET DESTINATION*</label>
-              <input type="text" id="destination" name="destination" required />
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="tripStart">START OF TRIP*</label>
-              <input
-                type="date"
-                id="tripStart"
-                name="tripStart"
-                required
-                placeholder="dd/mm/yyyy"
-              />
-            </div>
-            <div class="form-group">
-              <label for="tripEnd">END OF TRIP*</label>
-              <input
-                type="date"
-                id="tripEnd"
-                name="tripEnd"
-                required
-                placeholder="dd/mm/yyyy"
-              />
-            </div>
-          </div>
-
-          <div class="form-group-full">
-            <label for="phone">PHONE*</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              required
-              placeholder="US +1"
-            />
-          </div>
-
-          <div class="form-group-full">
-            <label for="inquiry">INQUIRY</label>
-            <textarea id="inquiry" name="inquiry" rows="4"></textarea>
-          </div>
-
-          <button type="submit" class="contact-submit-btn">SUBMIT</button>
-        </form>
-      </div>
-    </section>
-
-    <!-- Success Modal -->
-    <div id="successModal" class="modal">
-      <div class="modal-content">
-        <div class="modal-icon">
-          <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-            <circle cx="40" cy="40" r="38" stroke="#ece0bb" stroke-width="4" />
-            <path
-              d="M25 40L35 50L55 30"
-              stroke="#ece0bb"
-              stroke-width="4"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </div>
-        <h2 class="modal-title">MESSAGE SENT SUCCESSFULLY!</h2>
-        <p class="modal-text">
-          Check your email to see the status of your application.
+      <div class="page-hero-content">
+        <h1 class="page-hero-title">PRESS & MEDIA</h1>
+        <p class="page-hero-subtitle">
+          Latest news, press releases, and media resources from WGY Travel
         </p>
-        <button class="modal-ok-btn" onclick="closeModal()">OK</button>
       </div>
-    </div>
+    </section>
 
-    <!-- Footer -->
+    <section class="press-section">
+      <div class="container">
+        <h2 class="section-title">Articles</h2>
+        <div id="pressArticles" class="press-articles">
+          <img src="images/press/articles/1.jpeg" alt="Press article 1" />
+          <img src="images/press/articles/2.jpeg" alt="Press article 2" />
+          <img src="images/press/articles/3.jpeg" alt="Press article 3" />
+          <img src="images/press/articles/4.jpeg" alt="Press article 4" />
+          <img src="images/press/articles/5.jpeg" alt="Press article 5" />
+          <img src="images/press/articles/6.jpeg" alt="Press article 6" />
+          <img src="images/press/articles/7.jpeg" alt="Press article 7" />
+          <img src="images/press/articles/8.jpeg" alt="Press article 8" />
+          <img src="images/press/articles/9.jpeg" alt="Press article 9" />
+        </div>
+
+        <h2 class="section-title">Logos</h2>
+        <div id="pressLogos" class="press-logos">
+          <img src="images/press/logos/dujour.jpeg" alt="DuJour" />
+          <img src="images/press/logos/eglobal.jpeg" alt="EGlobal" />
+          <img
+            src="images/press/logos/logo-miami-modern.jpeg"
+            alt="Miami Modern"
+          />
+          <img src="images/press/logos/logo1.jpeg" alt="Logo 1" />
+          <img src="images/press/logos/logo2.jpeg" alt="Logo 2" />
+          <img src="images/press/logos/logo3.jpeg" alt="Logo 3" />
+          <img src="images/press/logos/logo4.jpeg" alt="Logo 4" />
+          <img src="images/press/logos/logo5.jpeg" alt="Logo 5" />
+          <img src="images/press/logos/logo6.jpeg" alt="Logo 6" />
+          <img src="images/press/logos/logo7.jpeg" alt="Logo 7" />
+          <img src="images/press/logos/logo8.jpeg" alt="Logo 8" />
+          <img src="images/press/logos/logo9.jpeg" alt="Logo 9" />
+          <img src="images/press/logos/travel-weekly.png" alt="Travel Weekly" />
+          <img src="images/press/logos/virtuoso-card.jpeg" alt="Virtuoso" />
+          <img src="images/press/logos/zink.jpeg" alt="Zink" />
+        </div>
+      </div>
+    </section>
+
+    <script>
+      (function () {
+        // Try to load images from a manifest first, otherwise try numbered filenames
+        const tryManifestThenNumbered = async (
+          dir,
+          containerId,
+          maxTry = 24,
+        ) => {
+          const container = document.getElementById(containerId);
+          if (!container) return;
+
+          // Helper to append image
+          const appendImg = (src, alt = "") => {
+            const img = document.createElement("img");
+            img.src = src;
+            img.alt = alt;
+            img.loading = "lazy";
+            container.appendChild(img);
+          };
+
+          // 1) Try manifest.json
+          try {
+            const res = await fetch(dir + "/manifest.json");
+            if (res.ok) {
+              const list = await res.json();
+              if (Array.isArray(list) && list.length) {
+                list.forEach((name) => appendImg(dir + "/" + name, name));
+                return;
+              }
+            }
+          } catch (e) {
+            // ignore
+          }
+
+          // 2) Fallback: try numbered filenames with common extensions
+          const exts = ["jpg", "jpeg", "png", "webp"];
+          for (let i = 1; i <= maxTry; i++) {
+            let found = false;
+            for (const ext of exts) {
+              const path = `${dir}/${i}.${ext}`;
+              try {
+                const r = await fetch(path, { method: "HEAD" });
+                if (r.ok) {
+                  appendImg(path, `${i}.${ext}`);
+                  found = true;
+                  break;
+                }
+              } catch (e) {}
+            }
+            // stop early if none of the extensions were found for several consecutive tries
+          }
+        };
+
+        // Load both folders
+        document.addEventListener("DOMContentLoaded", () => {
+          tryManifestThenNumbered("images/press/articles", "pressArticles", 20);
+          tryManifestThenNumbered("images/press/logos", "pressLogos", 48);
+        });
+      })();
+    </script>
+
+    <!-- Footer (copied) -->
     <footer id="contact" class="footer">
       <div class="footer-container">
         <div class="footer-left">
@@ -240,7 +233,7 @@
             alt="WGY Travel"
             class="footer-logo-img"
           />
-          <a href="contact.html" class="footer-journey-btn"
+          <a href="index.html#contact" class="footer-journey-btn"
             >START YOUR JOURNEY</a
           >
         </div>

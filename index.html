@@ -1,266 +1,449 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover the world with WGY Travel - Your perfect vacation starts here!">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the world with WGY Travel - Your perfect vacation starts here!"
+    />
     <title>WGY Travel - Discover the World</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <style>
-        @font-face {
-            font-family: 'TT Drugs';
-            src: url('fonts/TTDrugs-Regular.woff2') format('woff2'),
-                 url('fonts/TTDrugs-Regular.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'Glacial Indifference';
-            src: url('fonts/GlacialIndifference-Regular.woff2') format('woff2'),
-                 url('fonts/GlacialIndifference-Regular.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
+      @font-face {
+        font-family: "TT Drugs";
+        src:
+          url("fonts/TTDrugs-Regular.woff2") format("woff2"),
+          url("fonts/TTDrugs-Regular.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Glacial Indifference";
+        src:
+          url("fonts/GlacialIndifference-Regular.woff2") format("woff2"),
+          url("fonts/GlacialIndifference-Regular.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
     </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="images/wgylogo.png" alt="WGY Travel" class="logo-img">
-            </a>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link">HOME</a></li>
-                <li class="dropdown">
-                    <a href="about.html" class="nav-link">ABOUT US <span class="arrow">▼</span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="about.html#about-wgy">About WGY</a></li>
-                        <li><a href="about.html#mission">Our Mission</a></li>
-                        <li><a href="about.html#vision">Our Vision</a></li>
-                        <li><a href="about.html#ceo">Our CEO</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="services.html" class="nav-link">OUR SERVICES <span class="arrow">▼</span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="services.html#leisure-travel">Leisure Travel</a></li>
-                        <li><a href="services.html#entertainment-travel">Entertainment Travel</a></li>
-                    </ul>
-                </li>
-                <li><a href="terms.html" class="nav-link">TERMS & CONDITIONS</a></li>
-                <li><a href="https://wgy.inc" class="nav-link" target="_blank">CORPORATE</a></li>
-                <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="images/wgylogo.png" alt="WGY Travel" class="logo-img" />
+        </a>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li class="dropdown">
+            <a href="about.html" class="nav-link"
+              >ABOUT US <span class="arrow">▼</span></a
+            >
+            <ul class="dropdown-menu">
+              <li><a href="about.html#about-wgy">About WGY</a></li>
+              <li><a href="about.html#mission">Our Mission</a></li>
+              <li><a href="about.html#vision">Our Vision</a></li>
+              <li><a href="about.html#ceo">Our CEO</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+          </li>
+          <li class="dropdown">
+            <a href="services.html" class="nav-link"
+              >OUR SERVICES <span class="arrow">▼</span></a
+            >
+            <ul class="dropdown-menu">
+              <li><a href="services.html#leisure-travel">Leisure Travel</a></li>
+              <li>
+                <a href="services.html#entertainment-travel"
+                  >Entertainment Travel</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="terms.html" class="nav-link">TERMS & CONDITIONS</a></li>
+          <li>
+            <a href="https://wgy.inc" class="nav-link" target="_blank"
+              >CORPORATE</a
+            >
+          </li>
+          <li><a href="press.html" class="nav-link">PRESS</a></li>
+          <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">DISCOVER THE WORLD WITH WGY TRAVEL</h1>
-            <p class="hero-subtitle">YOUR PERFECT VACATION STARTS HERE!</p>
-        </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">DISCOVER THE WORLD WITH WGY TRAVEL</h1>
+        <p class="hero-subtitle">YOUR PERFECT VACATION STARTS HERE!</p>
+      </div>
     </section>
 
     <!-- Preferred Partners Section -->
     <section class="partners-section">
-        <div class="container">
-            <h2 class="section-title">PREFERRED PARTNERS</h2>
+      <div class="container">
+        <h2 class="section-title">PREFERRED PARTNERS</h2>
+      </div>
+      <div class="partners-carousel">
+        <div class="partners-track">
+          <div class="partner-logo">
+            <img src="images/preferred-partners/couture.png" alt="Couture" />
+          </div>
+          <div class="partner-logo">
+            <img
+              src="images/preferred-partners/fourseasns.png"
+              alt="Four Seasons"
+            />
+          </div>
+          <div class="partner-logo">
+            <img src="images/preferred-partners/jumeirah.png" alt="Jumeirah" />
+          </div>
+          <div class="partner-logo">
+            <img
+              src="images/preferred-partners/pearlpartner.png"
+              alt="Pearl Partner"
+            />
+          </div>
+          <div class="partner-logo">
+            <img
+              src="images/preferred-partners/relais.png"
+              alt="Relais & Chateaux"
+            />
+          </div>
+          <div class="partner-logo">
+            <img
+              src="images/preferred-partners/shangrila.png"
+              alt="Shangri-La"
+            />
+          </div>
+          <!-- Duplicated for seamless loop -->
+          <div class="partner-logo">
+            <img src="images/preferred-partners/couture.png" alt="Couture" />
+          </div>
+          <div class="partner-logo">
+            <img
+              src="images/preferred-partners/fourseasns.png"
+              alt="Four Seasons"
+            />
+          </div>
+          <div class="partner-logo">
+            <img src="images/preferred-partners/jumeirah.png" alt="Jumeirah" />
+          </div>
+          <div class="partner-logo">
+            <img
+              src="images/preferred-partners/pearlpartner.png"
+              alt="Pearl Partner"
+            />
+          </div>
+          <div class="partner-logo">
+            <img
+              src="images/preferred-partners/relais.png"
+              alt="Relais & Chateaux"
+            />
+          </div>
+          <div class="partner-logo">
+            <img
+              src="images/preferred-partners/shangrila.png"
+              alt="Shangri-La"
+            />
+          </div>
         </div>
-        <div class="partners-carousel">
-            <div class="partners-track">
-                <div class="partner-logo"><img src="images/preferred-partners/couture.png" alt="Couture"></div>
-                <div class="partner-logo"><img src="images/preferred-partners/fourseasns.png" alt="Four Seasons"></div>
-                <div class="partner-logo"><img src="images/preferred-partners/jumeirah.png" alt="Jumeirah"></div>
-                <div class="partner-logo"><img src="images/preferred-partners/pearlpartner.png" alt="Pearl Partner"></div>
-                <div class="partner-logo"><img src="images/preferred-partners/relais.png" alt="Relais & Chateaux"></div>
-                <div class="partner-logo"><img src="images/preferred-partners/shangrila.png" alt="Shangri-La"></div>
-                <!-- Duplicated for seamless loop -->
-                <div class="partner-logo"><img src="images/preferred-partners/couture.png" alt="Couture"></div>
-                <div class="partner-logo"><img src="images/preferred-partners/fourseasns.png" alt="Four Seasons"></div>
-                <div class="partner-logo"><img src="images/preferred-partners/jumeirah.png" alt="Jumeirah"></div>
-                <div class="partner-logo"><img src="images/preferred-partners/pearlpartner.png" alt="Pearl Partner"></div>
-                <div class="partner-logo"><img src="images/preferred-partners/relais.png" alt="Relais & Chateaux"></div>
-                <div class="partner-logo"><img src="images/preferred-partners/shangrila.png" alt="Shangri-La"></div>
-            </div>
-        </div>
+      </div>
     </section>
 
     <!-- Welcome Section -->
     <section id="about" class="welcome-section">
-        <div class="container">
-            <div class="welcome-content">
-                <div class="welcome-text">
-                    <h2 class="welcome-title">WELCOME TO WGY TRAVEL</h2>
-                    <p>We are a Travel Leaders Group registered travel agency with a passion for excellence. Our team of dedicated professionals brings together a wealth of expertise in the art and science of travel.</p>
-                    <p>Our goal is to make your journey as seamless and enjoyable as possible. We take care of every detail, from booking flights and hotels to arranging tours and experiences. We understand that meaningful journeys are about more than just destinations—they're about creating memories that last a lifetime. Whether you're planning a romantic getaway, a family vacation, or a solo adventure, we're here to help you discover the extraordinary.</p>
-                    <a href="#" class="read-more-btn">READ MORE</a>
-                </div>
-                <div class="welcome-logo">
-                    <img src="images/wgylogo.png" alt="WGY" class="welcome-logo-img">
-                </div>
-            </div>
+      <div class="container">
+        <div class="welcome-content">
+          <div class="welcome-text">
+            <h2 class="welcome-title">WELCOME TO WGY TRAVEL</h2>
+            <p>
+              We are a Travel Leaders Group registered travel agency with a
+              passion for excellence. Our team of dedicated professionals brings
+              together a wealth of expertise in the art and science of travel.
+            </p>
+            <p>
+              Our goal is to make your journey as seamless and enjoyable as
+              possible. We take care of every detail, from booking flights and
+              hotels to arranging tours and experiences. We understand that
+              meaningful journeys are about more than just destinations—they're
+              about creating memories that last a lifetime. Whether you're
+              planning a romantic getaway, a family vacation, or a solo
+              adventure, we're here to help you discover the extraordinary.
+            </p>
+            <a href="#" class="read-more-btn">READ MORE</a>
+          </div>
+          <div class="welcome-logo">
+            <img src="images/wgylogo.png" alt="WGY" class="welcome-logo-img" />
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Testimonials Section -->
     <section class="testimonials-section">
-        <div class="container">
-            <h2 class="section-title">OUR CLIENTS SAY</h2>
+      <div class="container">
+        <h2 class="section-title">OUR CLIENTS SAY</h2>
+      </div>
+      <div class="testimonials-carousel">
+        <div class="testimonials-track">
+          <div class="testimonial-card">
+            <h4>JULIE FOX</h4>
+            <p class="testimonial-date">3 weeks ago</p>
+            <div class="stars">★★★★★</div>
+            <p>
+              "Justin did an incredible job helping to plan my husband's 50th
+              birthday celebration! Every detail was perfect and he picked an
+              incredible location! Whether it's a family trip, adult getaway or
+              special occasion he and his team do an incredible job! Thank
+              you!!"
+            </p>
+          </div>
+          <div class="testimonial-card gold">
+            <h4>TODD BLINN</h4>
+            <p class="testimonial-date">A year ago</p>
+            <div class="stars">★★★★★</div>
+            <p>
+              "WGY Travel was great. They worked with me to get the right flight
+              for our getaway. Justin was amazing and responded very quickly.
+              Thank you WGY Travel."
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <h4>JACK LARSON</h4>
+            <p class="testimonial-date">A year ago</p>
+            <div class="stars">★★★★★</div>
+            <p>
+              "Fantastic service. Answered my emails at all hours of the day and
+              accommodated my travel plans with no issues."
+            </p>
+          </div>
+          <div class="testimonial-card gold">
+            <h4>TASIN AHMED</h4>
+            <p class="testimonial-date">A year ago</p>
+            <div class="stars">★★★★★</div>
+            <p>
+              "Professionalism: The team at WGY Travel were very professional in
+              their approach to providing travel services."
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <h4>AZAD HUSSAIN</h4>
+            <p class="testimonial-date">A year ago</p>
+            <div class="stars">★★★★★</div>
+            <p>
+              "Excellent travel service. WGY Travel provided an outstanding
+              travel service that exceeded my expectations."
+            </p>
+          </div>
+          <div class="testimonial-card gold">
+            <h4>TYSON LAMB</h4>
+            <p class="testimonial-date">A year ago</p>
+            <div class="stars">★★★★★</div>
+            <p>
+              "My company is using WGY Travel for a cruise vacation we are going
+              on, and they have been amazing to work with! There were some
+              things I personally wanted for my wife and I that were not
+              included in our companies package, but WGY do their thing and made
+              it happen!"
+            </p>
+          </div>
+          <!-- Duplicated for seamless loop -->
+          <div class="testimonial-card">
+            <h4>JULIE FOX</h4>
+            <p class="testimonial-date">3 weeks ago</p>
+            <div class="stars">★★★★★</div>
+            <p>
+              "Justin did an incredible job helping to plan my husband's 50th
+              birthday celebration! Every detail was perfect and he picked an
+              incredible location! Whether it's a family trip, adult getaway or
+              special occasion he and his team do an incredible job! Thank
+              you!!"
+            </p>
+          </div>
+          <div class="testimonial-card gold">
+            <h4>TODD BLINN</h4>
+            <p class="testimonial-date">A year ago</p>
+            <div class="stars">★★★★★</div>
+            <p>
+              "WGY Travel was great. They worked with me to get the right flight
+              for our getaway. Justin was amazing and responded very quickly.
+              Thank you WGY Travel."
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <h4>JACK LARSON</h4>
+            <p class="testimonial-date">A year ago</p>
+            <div class="stars">★★★★★</div>
+            <p>
+              "Fantastic service. Answered my emails at all hours of the day and
+              accommodated my travel plans with no issues."
+            </p>
+          </div>
+          <div class="testimonial-card gold">
+            <h4>TASIN AHMED</h4>
+            <p class="testimonial-date">A year ago</p>
+            <div class="stars">★★★★★</div>
+            <p>
+              "Professionalism: The team at WGY Travel were very professional in
+              their approach to providing travel services."
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <h4>AZAD HUSSAIN</h4>
+            <p class="testimonial-date">A year ago</p>
+            <div class="stars">★★★★★</div>
+            <p>
+              "Excellent travel service. WGY Travel provided an outstanding
+              travel service that exceeded my expectations."
+            </p>
+          </div>
+          <div class="testimonial-card gold">
+            <h4>TYSON LAMB</h4>
+            <p class="testimonial-date">A year ago</p>
+            <div class="stars">★★★★★</div>
+            <p>
+              "My company is using WGY Travel for a cruise vacation we are going
+              on, and they have been amazing to work with! There were some
+              things I personally wanted for my wife and I that were not
+              included in our companies package, but WGY do their thing and made
+              it happen!"
+            </p>
+          </div>
         </div>
-        <div class="testimonials-carousel">
-            <div class="testimonials-track">
-                <div class="testimonial-card">
-                    <h4>JULIE FOX</h4>
-                    <p class="testimonial-date">3 weeks ago</p>
-                    <div class="stars">★★★★★</div>
-                    <p>"Justin did an incredible job helping to plan my husband's 50th birthday celebration! Every detail was perfect and he picked an incredible location! Whether it's a family trip, adult getaway or special occasion he and his team do an incredible job! Thank you!!"</p>
-                </div>
-                <div class="testimonial-card gold">
-                    <h4>TODD BLINN</h4>
-                    <p class="testimonial-date">A year ago</p>
-                    <div class="stars">★★★★★</div>
-                    <p>"WGY Travel was great. They worked with me to get the right flight for our getaway. Justin was amazing and responded very quickly. Thank you WGY Travel."</p>
-                </div>
-                <div class="testimonial-card">
-                    <h4>JACK LARSON</h4>
-                    <p class="testimonial-date">A year ago</p>
-                    <div class="stars">★★★★★</div>
-                    <p>"Fantastic service. Answered my emails at all hours of the day and accommodated my travel plans with no issues."</p>
-                </div>
-                <div class="testimonial-card gold">
-                    <h4>TASIN AHMED</h4>
-                    <p class="testimonial-date">A year ago</p>
-                    <div class="stars">★★★★★</div>
-                    <p>"Professionalism: The team at WGY Travel were very professional in their approach to providing travel services."</p>
-                </div>
-                <div class="testimonial-card">
-                    <h4>AZAD HUSSAIN</h4>
-                    <p class="testimonial-date">A year ago</p>
-                    <div class="stars">★★★★★</div>
-                    <p>"Excellent travel service. WGY Travel provided an outstanding travel service that exceeded my expectations."</p>
-                </div>
-                <div class="testimonial-card gold">
-                    <h4>TYSON LAMB</h4>
-                    <p class="testimonial-date">A year ago</p>
-                    <div class="stars">★★★★★</div>
-                    <p>"My company is using WGY Travel for a cruise vacation we are going on, and they have been amazing to work with! There were some things I personally wanted for my wife and I that were not included in our companies package, but WGY do their thing and made it happen!"</p>
-                </div>
-                <!-- Duplicated for seamless loop -->
-                <div class="testimonial-card">
-                    <h4>JULIE FOX</h4>
-                    <p class="testimonial-date">3 weeks ago</p>
-                    <div class="stars">★★★★★</div>
-                    <p>"Justin did an incredible job helping to plan my husband's 50th birthday celebration! Every detail was perfect and he picked an incredible location! Whether it's a family trip, adult getaway or special occasion he and his team do an incredible job! Thank you!!"</p>
-                </div>
-                <div class="testimonial-card gold">
-                    <h4>TODD BLINN</h4>
-                    <p class="testimonial-date">A year ago</p>
-                    <div class="stars">★★★★★</div>
-                    <p>"WGY Travel was great. They worked with me to get the right flight for our getaway. Justin was amazing and responded very quickly. Thank you WGY Travel."</p>
-                </div>
-                <div class="testimonial-card">
-                    <h4>JACK LARSON</h4>
-                    <p class="testimonial-date">A year ago</p>
-                    <div class="stars">★★★★★</div>
-                    <p>"Fantastic service. Answered my emails at all hours of the day and accommodated my travel plans with no issues."</p>
-                </div>
-                <div class="testimonial-card gold">
-                    <h4>TASIN AHMED</h4>
-                    <p class="testimonial-date">A year ago</p>
-                    <div class="stars">★★★★★</div>
-                    <p>"Professionalism: The team at WGY Travel were very professional in their approach to providing travel services."</p>
-                </div>
-                <div class="testimonial-card">
-                    <h4>AZAD HUSSAIN</h4>
-                    <p class="testimonial-date">A year ago</p>
-                    <div class="stars">★★★★★</div>
-                    <p>"Excellent travel service. WGY Travel provided an outstanding travel service that exceeded my expectations."</p>
-                </div>
-                <div class="testimonial-card gold">
-                    <h4>TYSON LAMB</h4>
-                    <p class="testimonial-date">A year ago</p>
-                    <div class="stars">★★★★★</div>
-                    <p>"My company is using WGY Travel for a cruise vacation we are going on, and they have been amazing to work with! There were some things I personally wanted for my wife and I that were not included in our companies package, but WGY do their thing and made it happen!"</p>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
     <!-- Airline Partners Section -->
     <section class="airline-partners-section">
-        <div class="container">
-            <h2 class="section-title">AIRLINE PARTNERS</h2>
+      <div class="container">
+        <h2 class="section-title">AIRLINE PARTNERS</h2>
+      </div>
+      <div class="airline-carousel">
+        <div class="airline-track">
+          <div class="airline-logo">
+            <img
+              src="images/airline-partners/united.png"
+              alt="United Airlines"
+            />
+          </div>
+          <div class="airline-logo">
+            <img src="images/airline-partners/jal.png" alt="JAL" />
+          </div>
+          <div class="airline-logo">
+            <img
+              src="images/airline-partners/sal.png"
+              alt="Singapore Airlines"
+            />
+          </div>
+          <div class="airline-logo airline-logo-small">
+            <img src="images/airline-partners/delta.png" alt="Delta" />
+          </div>
+          <div class="airline-logo">
+            <img
+              src="images/airline-partners/american.png"
+              alt="American Airlines"
+            />
+          </div>
+          <!-- Duplicated for seamless loop -->
+          <div class="airline-logo">
+            <img
+              src="images/airline-partners/united.png"
+              alt="United Airlines"
+            />
+          </div>
+          <div class="airline-logo">
+            <img src="images/airline-partners/jal.png" alt="JAL" />
+          </div>
+          <div class="airline-logo">
+            <img
+              src="images/airline-partners/sal.png"
+              alt="Singapore Airlines"
+            />
+          </div>
+          <div class="airline-logo airline-logo-small">
+            <img src="images/airline-partners/delta.png" alt="Delta" />
+          </div>
+          <div class="airline-logo">
+            <img
+              src="images/airline-partners/american.png"
+              alt="American Airlines"
+            />
+          </div>
         </div>
-        <div class="airline-carousel">
-            <div class="airline-track">
-                <div class="airline-logo"><img src="images/airline-partners/united.png" alt="United Airlines"></div>
-                <div class="airline-logo"><img src="images/airline-partners/jal.png" alt="JAL"></div>
-                <div class="airline-logo"><img src="images/airline-partners/sal.png" alt="Singapore Airlines"></div>
-                <div class="airline-logo airline-logo-small"><img src="images/airline-partners/delta.png" alt="Delta"></div>
-                <div class="airline-logo"><img src="images/airline-partners/american.png" alt="American Airlines"></div>
-                <!-- Duplicated for seamless loop -->
-                <div class="airline-logo"><img src="images/airline-partners/united.png" alt="United Airlines"></div>
-                <div class="airline-logo"><img src="images/airline-partners/jal.png" alt="JAL"></div>
-                <div class="airline-logo"><img src="images/airline-partners/sal.png" alt="Singapore Airlines"></div>
-                <div class="airline-logo airline-logo-small"><img src="images/airline-partners/delta.png" alt="Delta"></div>
-                <div class="airline-logo"><img src="images/airline-partners/american.png" alt="American Airlines"></div>
-            </div>
-        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer id="contact" class="footer">
-        <div class="footer-container">
-            <div class="footer-left">
-                <h3>GET IN TOUCH</h3>
-                <p class="footer-subtitle">WE'RE HERE TO HELP</p>
-                <div class="footer-contact">
-                    <p><span class="contact-icon">📍</span> 6881 NW 8B STREET UNIT 62 DORAL FLORIDA, USA</p>
-                    <p><span class="contact-icon">📧</span> 305 679 0408</p>
-                    <p>REQUEST@WGYLIFESTYLE.COM</p>
-                </div>
-                <div class="footer-socials">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-            <div class="footer-center">
-                <img src="images/wgylogo.png" alt="WGY Travel" class="footer-logo-img">
-                <a href="#" class="footer-journey-btn">START YOUR JOURNEY</a>
-            </div>
-            <div class="footer-right">
-                <h3>GALLERY</h3>
-                <div class="footer-gallery">
-                    <img src="images/services/1.jpg" alt="Gallery 1">
-                    <img src="images/services/2.jpg" alt="Gallery 2">
-                    <img src="images/services/3.jpg" alt="Gallery 3">
-                </div>
-            </div>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>GET IN TOUCH</h3>
+          <p class="footer-subtitle">WE'RE HERE TO HELP</p>
+          <div class="footer-contact">
+            <p>
+              <span class="contact-icon">📍</span> 6881 NW 8B STREET UNIT 62
+              DORAL FLORIDA, USA
+            </p>
+            <p><span class="contact-icon">📧</span> 305 679 0408</p>
+            <p>REQUEST@WGYLIFESTYLE.COM</p>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="social-icon"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          </div>
         </div>
-        <div class="footer-partners">
-            <div class="partners-logos">
-                <img src="images/footer/select.png" alt="Select Registry">
-                <img src="images/footer/iatan.png" alt="IATAN">
-                <img src="images/footer/travel leaders.png" alt="Travel Leaders">
-                <img src="images/footer/luxury.png" alt="Luxury Leaders Alliance">
-            </div>
+        <div class="footer-center">
+          <img
+            src="images/wgylogo.png"
+            alt="WGY Travel"
+            class="footer-logo-img"
+          />
+          <a href="#" class="footer-journey-btn">START YOUR JOURNEY</a>
         </div>
+        <div class="footer-right">
+          <h3>GALLERY</h3>
+          <div class="footer-gallery">
+            <img src="images/services/1.jpg" alt="Gallery 1" />
+            <img src="images/services/2.jpg" alt="Gallery 2" />
+            <img src="images/services/3.jpg" alt="Gallery 3" />
+          </div>
+        </div>
+      </div>
+      <div class="footer-partners">
+        <div class="partners-logos">
+          <img src="images/footer/select.png" alt="Select Registry" />
+          <img src="images/footer/iatan.png" alt="IATAN" />
+          <img src="images/footer/travel leaders.png" alt="Travel Leaders" />
+          <img src="images/footer/luxury.png" alt="Luxury Leaders Alliance" />
+        </div>
+      </div>
     </footer>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
